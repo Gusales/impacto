@@ -4,7 +4,8 @@ module.exports = {
   content: [
     './index.html',
     './src/pages/**/*.tsx',
-    './src/components/**/*.tsx'
+    './src/components/**/*.tsx',
+    './src/componentes/**/*.tsx',
   ],
   prefix: "",
   theme: {
@@ -72,7 +73,7 @@ module.exports = {
       },
       fontFamily: {
         'montserrat': ["Montserrat", "sans-serif"]
-      }
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
