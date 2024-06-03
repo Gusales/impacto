@@ -1,3 +1,5 @@
+import Back from './src/assets/bg.jpg'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -74,6 +76,9 @@ module.exports = {
       fontFamily: {
         'montserrat': ["Montserrat", "sans-serif"]
       },
+      backgroundImage: {
+        'login': 'url("./src/assets/login-background.jpg")'
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

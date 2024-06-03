@@ -14,8 +14,8 @@ export function Header(){
           <img src={Logo} alt="" />
         </figure>
 
-        <a href="" className=" transition-all hover:underline hover:underline-offset-2">Doação</a>
-        <a href="" className=" transition-all hover:underline hover:underline-offset-2">Trabalho Voluntário</a>
+        <a href="" className="transition-all hover:underline hover:underline-offset-2">Doação</a>
+        <a href="" className="transition-all hover:underline hover:underline-offset-2">Trabalho Voluntário</a>
 
         <SelectLanguages />
 
