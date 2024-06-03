@@ -64,8 +64,8 @@ export function Login(){
         <p className="block mt-16 font-medium">Seja a mudança que você deseja ver no mundo. <br /> Comece agora mesmo na Impacto!</p>
 
         <div className="w-full flex flex-col mt-12 gap-2">
-          <button className={`p-5 w-[175px] text-white ${login === 'user' && "bg-white font-bold text-black"} rounded-r-full`} onClick={() => handleUpdateSearchParams("user")}>Login usuário</button>
-          <button className={`p-5 w-[175px] text-white ${login === 'ong' && "bg-white font-bold text-black"} rounded-r-full`} onClick={() => handleUpdateSearchParams("ong")}>Login ONG's</button>
+          <button className={`p-5 w-[175px] ${login === 'user' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={() => handleUpdateSearchParams("user")}>Login usuário</button>
+          <button className={`p-5 w-[175px] ${login === 'ong' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={() => handleUpdateSearchParams("ong")}>Login ONG's</button>
         </div>
 
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 w-full">
