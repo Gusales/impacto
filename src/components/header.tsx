@@ -8,7 +8,7 @@ import Login from '@/assets/login.png'
 
 export function Header(){
   return (
-    <header className="w-full flex flex-col items-center py-4 gap-4 shadow-md">
+    <header className="w-full flex flex-col items-center py-4 gap-4 shadow-md fixed top-0 z-10 bg-white">
       <div className="w-[80%] flex items-center justify-between">
         <figure>
           <img src={Logo} alt="" />
@@ -30,7 +30,7 @@ export function Header(){
           <Input placeholder="O que você está procurando?" className="w-full bg-[#EDEDED] px-5 py-3" />
           <Search className="absolute top-5 right-3 -translate-y-1/2 -translate-x-1/2" />
         </div>
-        <p>meus pontos</p> 
+        <p>Meus Pontos</p> 
       </div>
     </header>
   )
