@@ -47,7 +47,7 @@ export function SelectLanguages() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between border-0 hover:bg-transparent hover:underline"
+          className="w-[200px] justify-between border-0 hover:bg-transparent hover:underline bg-transparent text-white hover:text-zinc-100"
         >
           {value
             ? (<div className="flex items-center gap-2">

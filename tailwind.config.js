@@ -77,8 +77,9 @@ module.exports = {
         'montserrat': ["Montserrat", "sans-serif"]
       },
       backgroundImage: {
-        'login': 'url("./src/assets/login-background.jpg")'
-      }
+        'login': 'url("./src/assets/login-background.jpg")',
+        'linear-blue': "linear-gradient(90deg, rgba(218,241,255,1) 0%, rgba(140,186,217,1) 54%, rgba(74,130,156,1) 100%)"
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
