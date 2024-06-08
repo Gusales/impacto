@@ -8,6 +8,7 @@ import { Login } from './pages/login'
 
 import './lib/i18n'
 import './index.css'
+import { Register } from './pages/register'
 
 const routers = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const routers = createBrowserRouter([
   {
     path: 'login',
     element: <Login />
+  },
+  {
+    path: 'register',
+    element: <Register />
   }
 ])
 
