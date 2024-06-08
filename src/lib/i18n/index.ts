@@ -5,13 +5,14 @@ import pt from './translations/ptbr.json'
 import en from './translations/en.json'
 import es from './translations/es.json'
 
+
 i18n.use(initReactI18next).init({
-  fallbackLng: 'ptbr',
+  fallbackLng: localStorage.getItem('lang') || 'pt',
   interpolation: {
     escapeValue: false,
   },
   resources: {
-    ptbr: pt,
+    pt: pt,
     en: en,
     es: es
   }

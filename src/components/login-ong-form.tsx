@@ -40,7 +40,7 @@ export function LoginOngForm(){
 
       <div className="flex items-center gap-2">
         <p>{t('formLoginCriarConta')}</p>
-        <a href="" className="text-[#004AAD] font-semibold hover:underline hover:underline-offset-2">{t('formLoginCriarContaLink')}</a>
+        <a href="/register" className="text-[#004AAD] font-semibold hover:underline hover:underline-offset-2">{t('formLoginCriarContaLink')}</a>
       </div>
     </form>
   )

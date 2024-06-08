@@ -8,15 +8,20 @@ import { Login } from './pages/login'
 
 import './lib/i18n'
 import './index.css'
+import { Register } from './pages/register'
 
 const routers = createBrowserRouter([
   {
-    path: '/',
+    path: '',
     element: <Home />
   },
   {
-    path: '/login',
+    path: 'login',
     element: <Login />
+  },
+  {
+    path: 'register',
+    element: <Register />
   }
 ])
 

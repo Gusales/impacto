@@ -5,7 +5,6 @@ import Logo from '@/assets/Logo.svg'
 import Bridge from '@/assets/bridge-logo.svg'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { SelectLanguages } from "@/components/languages";
 
 
 document.title = "Login || Impacto"
@@ -31,10 +30,6 @@ export function Login(){
         </div>
         <h1 className="text-4xl font-bold leading-relaxed">{t('loginTitle')}</h1>
         <p>{t('loginFrase')}</p>
-        <div>
-          <p className="text-sm">{t('loginEscolhaLinguagem')}</p>
-          <SelectLanguages />
-        </div>
 
         {
           loginType === 'user' ? <LoginUserForm /> : <LoginOngForm />
