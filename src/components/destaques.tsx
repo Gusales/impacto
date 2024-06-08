@@ -1,5 +1,3 @@
-import { useTranslation } from "react-i18next";
-
 import {
     Carousel,
     CarouselContent,
@@ -18,7 +16,6 @@ import ceInstagram from "@/assets/ceInstagram.svg"
 import pessoasSolidarias from "@/assets/pessoasSolidarias.svg"
 
 function Destaques() {
-    const { t } = useTranslation()
     return (
         <>
             <Carousel className="relative w-full mx-auto overflow-hidden shadow-[0px_4px_10px_0px_#807e7e]"
