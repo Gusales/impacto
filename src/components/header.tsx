@@ -5,6 +5,8 @@ import { Search } from 'lucide-react'
 import Logo from '@/assets/Logo.svg'
 
 import Login from '@/assets/login.png'
+import Moeda from '@/assets/moeda.png'
+
 import { useTranslation } from 'react-i18next'
 
 export function Header(){
@@ -35,7 +37,10 @@ export function Header(){
           <Input placeholder={t('headerInputPlaceholder')} className="w-full bg-[#EDEDED] px-5 py-3" />
           <Search className="absolute top-5 right-3 -translate-y-1/2 -translate-x-1/2" />
         </div>
-        <p>{t('headerPontos')}</p> 
+        <button className="cursor-pointer flex items-center gap-2 hover:underline hover:underline-offset-2">
+          <img src={Moeda} alt="icone de moeda" />
+          <p>{t('headerPontos')}</p>  
+        </button> 
       </div>
     </header>
   )
