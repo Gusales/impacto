@@ -39,14 +39,15 @@ const languages = [
 
 export function SelectLanguages() {
   const [open, setOpen] = React.useState(false)
-  const [value, setValue] = React.useState("pt")
+  const [value, setValue] = React.useState(localStorage.getItem('lang'))
 
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
  
   function handleSetTranslation(currentValue: string){
     setValue(currentValue === value ? "" : currentValue)
     setOpen(state => !state)
     i18n.changeLanguage(currentValue)
+    localStorage.setItem('lang', currentValue)
   }
 
   return (

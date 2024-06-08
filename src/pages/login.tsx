@@ -31,10 +31,6 @@ export function Login(){
         </div>
         <h1 className="text-4xl font-bold leading-relaxed">{t('loginTitle')}</h1>
         <p>{t('loginFrase')}</p>
-        <div>
-          <p className="text-sm">{t('loginEscolhaLinguagem')}</p>
-          <SelectLanguages />
-        </div>
 
         {
           loginType === 'user' ? <LoginUserForm /> : <LoginOngForm />
