@@ -15,7 +15,7 @@ export function Header(){
       <div className="bg-linear-blue w-full flex pt-4 pb-3 justify-center shadow-md">
         <div className="w-[80%] flex items-center justify-between">
           <figure>
-            <img src={Logo} alt="" className="w-[68px]" />
+            <img src={Logo} alt="Logo da Impacto" className="w-[68px]" />
           </figure>
 
           <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerDoacao')}</a>

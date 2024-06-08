@@ -1,4 +1,4 @@
-import BoasVindas from "@/components/boasVindas"
+import Destaques from "@/components/destaques"
 import { Header } from "@/components/header"
 import Footer from "@/components/footer"
 
@@ -7,7 +7,7 @@ export function Home(){
   return(
     <>
       <Header />
-      <BoasVindas />
+      <Destaques />
       <div>Conteudo</div> {/*Remover isso aqui*/}
       <Footer />
     </>
