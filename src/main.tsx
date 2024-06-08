@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Home } from './pages/home'
 import { Login } from './pages/login'
 
+import './lib/i18n'
 import './index.css'
 
 const routers = createBrowserRouter([

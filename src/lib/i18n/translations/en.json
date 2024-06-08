@@ -1,0 +1,33 @@
+{
+  "translation": {
+    "loginTitle": "Access the Platform",
+    "loginSlogan": "Uniting Causes, Transforming Lives!",
+    "loginFrase": "Log in or register to start impacting lives today.",
+    "loginTextPart1": "Be the change you wish to see in the world.",
+    "loginTextPart2": "Start right now at Impacto!",
+    "loginButtonUser": "User Login",
+    "loginButtonONG": "NGO Login",
+    "loginEscolhaLinguagem": "Choose the language",
+
+    "formUserEmailLabel": "Email",
+    "formUserEmailInputPlaceholder": "Enter your email",
+    "formONGCnpjLabel": "CNPJ",
+    "formONGCnpjInputPlaceholder": "Enter your CNPJ",
+    "formPasswordLabel": "Password",
+    "formPasswordInputPlaceholder": "Enter your password",
+    "formEsqueceuSuaSenha": "Forgot your password?",
+    "formSubmitButton": "Sign In",
+    "formLoginCriarConta": "Don't have an account yet?",
+    "formLoginCriarContaLink": "Sign Up",
+
+    "headerDoacao": "Donation",
+    "headerTrabalhoVoluntario": "Volunteer Work",
+    "headerEntrar": "Sign In",
+    "headerInputPlaceholder": "What are you looking for?",
+    "headerPontos": "My Points",
+
+    "boasVindasH1": "Impacting Lives",
+    "boasVindasP": "Want to make a difference, but don't know any NGOs?",
+    "boasVindasButton": "Impact NGOs"
+  }
+}

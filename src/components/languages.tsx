@@ -17,6 +17,7 @@ import {
 import BR from "@/assets/paises/br.svg"
 import ES from "@/assets/paises/es.svg"
 import US from "@/assets/paises/us.svg"
+import { useTranslation } from "react-i18next"
 
 const languages = [
   {
@@ -26,7 +27,7 @@ const languages = [
   },
   {
     value: "en",
-    label: "Inglês",
+    label: "English",
     flag: US,
   },
   {
@@ -39,6 +40,14 @@ const languages = [
 export function SelectLanguages() {
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState("pt")
+
+  const { t, i18n } = useTranslation()
+ 
+  function handleSetTranslation(currentValue: string){
+    setValue(currentValue === value ? "" : currentValue)
+    setOpen(state => !state)
+    i18n.changeLanguage(currentValue)
+  }
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -72,10 +81,7 @@ export function SelectLanguages() {
               <CommandItem 
                 key={item.value}
                 value={item.value}
-                onSelect={(currentValue) => {
-                  setValue(currentValue === value ? "" : currentValue)
-                  setOpen(state => !state)
-                }}
+                onSelect={handleSetTranslation}
                 className="gap-2"
                 >
                   <img src={item.flag} className="rounded-full object-cover h-[20px] w-[20px]"/>

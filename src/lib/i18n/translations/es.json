@@ -1,0 +1,33 @@
+{
+  "translation": {
+    "loginTitle": "Accede a la Plataforma",
+    "loginSlogan": "¡Uniendo causas, Transformando vidas!",
+    "loginFrase": "Inicia sesión o regístrate para empezar a impactar vidas hoy mismo.",
+    "loginTextPart1": "Sé el cambio que deseas ver en el mundo.",
+    "loginTextPart2": "¡Empieza ahora mismo en Impacto!",
+    "loginButtonUser": "Inicio de Sesión Usuario",
+    "loginButtonONG": "Inicio de Sesión ONG's",
+    "loginEscolhaLinguagem": "Elige el idioma",
+
+    "formUserEmailLabel": "Correo Electrónico",
+    "formUserEmailInputPlaceholder": "Ingresa tu correo electrónico",
+    "formONGCnpjLabel": "CNPJ",
+    "formONGCnpjInputPlaceholder": "Ingresa tu CNPJ",
+    "formPasswordLabel": "Contraseña",
+    "formPasswordInputPlaceholder": "Ingresa tu contraseña",
+    "formEsqueceuSuaSenha": "¿Olvidaste tu contraseña?",
+    "formSubmitButton": "Ingresar",
+    "formLoginCriarConta": "¿Aún no tienes una cuenta?",
+    "formLoginCriarContaLink": "Regístrate",
+
+    "headerDoacao": "Donación",
+    "headerTrabalhoVoluntario": "Trabajo Voluntario",
+    "headerEntrar": "Iniciar Sesión",
+    "headerInputPlaceholder": "¿Qué estás buscando?",
+    "headerPontos": "Mis Puntos",
+
+    "boasVindasH1": "Impactando Vidas",
+    "boasVindasP": "¿Quieres hacer la diferencia, pero no conoces ninguna ONG?",
+    "boasVindasButton": "Impacta ONGs"
+  }
+}
