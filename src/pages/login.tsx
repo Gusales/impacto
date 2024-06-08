@@ -5,7 +5,6 @@ import Logo from '@/assets/Logo.svg'
 import Bridge from '@/assets/bridge-logo.svg'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { SelectLanguages } from "@/components/languages";
 
 
 document.title = "Login || Impacto"
