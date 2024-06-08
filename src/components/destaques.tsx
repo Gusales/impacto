@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
     Carousel,
     CarouselContent,
@@ -16,6 +18,7 @@ import ceInstagram from "@/assets/ceInstagram.svg"
 import pessoasSolidarias from "@/assets/pessoasSolidarias.svg"
 
 function Destaques() {
+    const { t } = useTranslation()
     return (
         <>
             <Carousel className="relative w-full mx-auto overflow-hidden shadow-[0px_4px_10px_0px_#807e7e]"
@@ -29,6 +32,7 @@ function Destaques() {
                     <CarouselItem className="min-w-full flex-shrink-0">
                         <div className="flex items-center justify-between h-screen bg-[#DAF1FF] p-5 text-black">
                             <div className="text-center mt-20 p-10">
+                                
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
                                 <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">DOE E FAÇA A DIFERENÇA</p>
                                 <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Quer fazer a diferença, mas não conhece nenhuma ONG?</p>
@@ -41,6 +45,7 @@ function Destaques() {
                     <CarouselItem className="min-w-full flex-shrink-0">
                         <div className="flex items-center justify-between h-screen bg-[#DAF1FF] p-5 text-black">
                                 <div className="text-center mt-20 p-10">
+
                                     <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
                                     <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">VIVA UMA EXPERIÊNCIA UNICA!</p>
                                     <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Dedique seu tempo e talento para fazer a diferença na vida de quem precisa.</p>
@@ -54,6 +59,7 @@ function Destaques() {
                     <CarouselItem className="min-w-full flex-shrink-0">
                         <div className="flex items-center justify-between h-screen bg-[#DAF1FF] p-5 text-black">
                                 <div className="text-center mt-20 p-10">
+
                                     <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
                                     <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">CUPONS QUE FAZEM BEM!</p>
                                     <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Doe e comece a acumular pontos, ganhe tickets e vauchers</p>
