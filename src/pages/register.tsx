@@ -1,6 +1,7 @@
-import Logo from '@/assets/Logo.svg'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
+import Logo from '@/assets/Logo.svg'
 
 import { RegisterOngForm } from "@/components/register-ong-form";
 
@@ -16,7 +17,6 @@ export function Register(){
     })
   }
   
-
   return (
     <div className="lg:grid lg:grid-cols-2 flex">
       <section className="bg-login bg-cover h-screen hidden lg:flex flex-col relative items-center">
@@ -25,11 +25,11 @@ export function Register(){
           <p>{t('loginTextPart2')}</p>
         </div>
 
-        <div className="w-full flex flex-col mt-12 gap-2">
-          <button className={`p-5 w-[175px] ${registerType === 'user' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={handleChangeLogin}>
+        <div className="w-full flex flex-col items-end mt-12 gap-2">
+          <button className={`p-5 w-[175px] text-black ${registerType === 'user' && "bg-white font-bold" || "font-medium"} rounded-l-full`} onClick={handleChangeLogin}>
             {t('loginButtonUser')}
           </button>
-          <button className={`p-5 w-[175px] ${registerType === 'ong' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={handleChangeLogin}>
+          <button className={`p-5 w-[175px] text-black ${registerType === 'ong' && "bg-white font-bold" || "font-medium"} rounded-l-full`} onClick={handleChangeLogin}>
           {t('loginButtonONG')}
           </button>
         </div>
@@ -41,7 +41,7 @@ export function Register(){
         </div>
       </section>
 
-      <main className="mt-8 bg-yellow-300 flex flex-col items-center *:w-full gap-6 w-[90%] pl-[10%] pb-4">
+      <main className="mt-8 flex flex-col items-center *:w-full gap-6 w-[90%] pl-[10%] pb-4">
         <h2 className="text-4xl font-semibold">Crie sua conta!</h2>
         <p className="text-xl">
         Cria uma conta agora mesmo e {registerType === "ong" ? "seja impactada por " : "cause impacto em "} várias pessoas!
