@@ -62,8 +62,8 @@ function Destaques() {
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
                                 <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">CUPONS QUE FAZEM BEM!</p>
-                                <p className="max-w-[60%] text-center text-[20px] mx-auto mt-[44px] text-[#061314]">Doe e comece a acumular pontos, ganhe tickets e vauchers</p>
-                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>Ganhe Pontos</button></a>
+                                <p className="max-w-[60%] text-center text-[20px] mx-auto mt-[44px] text-[#061314] mb-[88px]">Doe e comece a acumular pontos, ganhe tickets e vauchers</p>
+                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer'>Ganhe Pontos</button></a>
                                 <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">E Economize!</p>
                             </div>
                             <img className="w-full h-auto" src={Cupons} alt="Bolsa e moedas de cupons" />
