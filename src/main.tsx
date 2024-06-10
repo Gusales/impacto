@@ -5,10 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import { Home } from './pages/home'
 import { Login } from './pages/login'
+import { Register } from './pages/register'
 
 import './lib/i18n'
 import './index.css'
-import { Register } from './pages/register'
 
 const routers = createBrowserRouter([
   {
