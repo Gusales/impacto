@@ -2,9 +2,17 @@ function HomeContent() {
     return (
         <>
             <main>
-                <section className="recomendações">
-                    recomendações
-                </section>
+                    <div>
+                        <h2 className="text-[28px] font-[500] m-5">Recomendações do dia</h2>
+                        <p className="font-[#313131] text-[18px] ml-5">Conheça uma nova ONG</p>
+
+
+                        <div className="flex m-5 mb-28 justify-between">
+                            <a href="#"><img className="rounded-xl" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
+                            <a href="#"><img className="rounded-xl" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
+                            <a href="#"><img className="rounded-xl" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
+                        </div>
+                    </div>
 
                 <div className="m-5">
                     <h2 className="m-5 font-[600] text-[28px]">SUA VAGA IDEAL</h2>

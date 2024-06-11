@@ -20,6 +20,7 @@ export function Header(){
             <img src={Logo} alt="Logo da Impacto" className="w-[68px]" />
           </figure>
 
+          <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerSobreNos')}</a>
           <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerDoacao')}</a>
           <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerTrabalhoVoluntario')}</a>
 

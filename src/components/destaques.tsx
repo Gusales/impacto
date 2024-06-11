@@ -9,12 +9,12 @@ import Autoplay from "embla-carousel-autoplay"
 import { Instagram } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Facebook } from "lucide-react";
-import ImagemFamilia from "@/assets/imagemFamilia.svg"
-import Ponte from "@/assets/ponte.svg"
-import maosLevantadas from "@/assets/maosLevantadas.svg"
-import ceInstagram from "@/assets/ceInstagram.svg"
-import pessoasSolidarias from "@/assets/pessoasSolidarias.svg"
+import WomanDog from "@/assets/womanDog-destaques.svg"
+import Cadeirante from "@/assets/cadeirante-destaques.svg"
 import Cupons from "@/assets/cupons.svg"
+import Criancas from "@/assets/criancas-destaques.svg"
+import CeInstagram from "@/assets/celInstagram.svg"
+import Ponte from "@/assets/ponte.svg"
 
 function Destaques() {
     return (
@@ -36,12 +36,12 @@ function Destaques() {
                                 <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Quer fazer a diferença, mas não conhece nenhuma ONG?</p>
                                 <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>ONGs Parceiras</button></a>
                             </div>
-                            <img className="h-screen pt-52" src={ImagemFamilia} alt="Ilustração de uma família" />
+                            <img className="h-screen pt-52" src={WomanDog} alt="Uma mulher segurando um cachorro" />
                         </div>
                     </CarouselItem>
 
                     <CarouselItem className="max-w-full flex-shrink-0">
-                        <div className="flex relative items-center h-screen bg-[#DAF1FF] p-5 text-black">
+                        <div className="flex relative items-center h-screen bg-gradient-to-b from-[#DAF1FF] to-[#7BB0C1] p-5 text-black">
                             <div className="flex mt-36">
 
                                 <div className="text-center">
@@ -52,12 +52,12 @@ function Destaques() {
                                     <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">E Faça a Diferença</p>
                                 </div>
                             </div>
-                                <img className="h-auto mt-52" src={maosLevantadas} alt="Mãos Levantadas" />
+                                <img className="m-auto mt-72" src={Cadeirante} alt="Um voluntário e senhor cadeirante" />
                         </div>
                     </CarouselItem>
 
                     <CarouselItem className="max-w-full flex-shrink-0">
-                        <div className="flex relative items-center justify-between h-screen bg-[#DAF1FF] p-5 text-black">
+                        <div className="flex relative items-center justify-between h-screen bg-gradient-to-b from-[#DAF1FF] to-[#7BB0C1] p-5 text-black">
                             <div className="mt-20 p-10 absolute inset-0 flex flex-col items-center justify-center max-w-[50%]">
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
@@ -66,12 +66,12 @@ function Destaques() {
                                 <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer'>Ganhe Pontos</button></a>
                                 <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">E Economize!</p>
                             </div>
-                            <img className="w-full h-auto" src={Cupons} alt="Bolsa e moedas de cupons" />
+                            <img className="w-full h-auto" src={Cupons} alt="Ilustração dos pontos da impacto" />
                         </div>
                     </CarouselItem>
 
                     <CarouselItem className="max-w-full flex-shrink-0">
-                        <div className="flex items-center justify-between h-screen bg-[#DAF1FF] p-5 text-black">
+                        <div className="flex items-center justify-between h-screen bg-gradient-to-b from-[#DAF1FF] to-[#7BB0C1] p-5 text-black">
                             <div className="text-center mt-20 p-10">
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
@@ -79,12 +79,12 @@ function Destaques() {
                                 <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Cadastre sua ONG na <strong className="text-[#004358]">IMPACTO</strong> e tenha acesso a oportunidades de colaboaração.</p>
                                 <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>Una-se a IMPACTO</button></a>
                             </div>
-                            <img className="h-screen pt-52" src={pessoasSolidarias} alt="Ilustração de pessoas solidárias" />
+                            <img className="h-screen pt-52 mr-10" src={Criancas} alt="Crianças da Tanzânia" />
                         </div>
                     </CarouselItem>
 
                     <CarouselItem className="max-w-full flex-shrink-0">
-                        <div className="flex items-center justify-between h-screen bg-[#DAF1FF] p-5 text-black">
+                        <div className="flex items-center justify-between h-screen bg-gradient-to-b from-[#DAF1FF] via-[#cfeafa] to-[#7BB0C1] p-5 text-black">
                             <div className="text-center mt-20 p-10">
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
 
@@ -98,7 +98,7 @@ function Destaques() {
                                     <a href="https://www.instagram.com/impactoinspira?igsh=OWl4ZHc1dTV2NDd5" target="_blank" className="flex"><Instagram /><p className="ml-1">Instagram</p></a>
                                 </div>
                             </div>
-                            <img className="h-screen pr-10 pt-52" src={ceInstagram} alt="Instagram da Impacto" />
+                            <img className="h-screen pr-10 pt-52" src={CeInstagram} alt="Instagram da Impacto" />
                         </div>
                     </CarouselItem>
                 </CarouselContent>
