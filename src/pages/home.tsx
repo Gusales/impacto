@@ -1,6 +1,7 @@
 import Destaques from "@/components/destaques"
 import { Header } from "@/components/header"
 import Footer from "@/components/footer"
+import HomeContent from "@/components/home-content"
 
 export function Home(){
   document.title = "Impacto"
@@ -8,7 +9,7 @@ export function Home(){
     <>
       <Header />
       <Destaques />
-      <div>Conteudo</div> {/*Remover isso aqui*/}
+      <HomeContent />
       <Footer />
     </>
    

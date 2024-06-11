@@ -28,7 +28,7 @@ function Destaques() {
             >
                 <CarouselContent className="flex transition-transform">
                     <CarouselItem className="min-w-full flex-shrink-0">
-                        <div className="flex items-center justify-between h-screen bg-[#DAF1FF] p-5 text-black">
+                        <div className="flex items-center justify-between h-screen bg-gradient-to-b from-[#DAF1FF] to-[#7BB0C1] p-5 text-black">
                             <div className="text-center mt-20 p-10">
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
@@ -42,9 +42,9 @@ function Destaques() {
 
                     <CarouselItem className="max-w-full flex-shrink-0">
                         <div className="flex relative items-center h-screen bg-[#DAF1FF] p-5 text-black">
-                            <div className="absolute inset-0 flex flex-col items-start justify-start mt-48">
+                            <div className="flex mt-36">
 
-                                <div className="text-center max-w-[40%]">
+                                <div className="text-center">
                                     <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
                                     <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">VIVA UMA EXPERIÊNCIA UNICA!</p>
                                     <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Dedique seu tempo e talento para fazer a diferença na vida de quem precisa.</p>
@@ -52,7 +52,7 @@ function Destaques() {
                                     <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">E Faça a Diferença</p>
                                 </div>
                             </div>
-                            <img className="w-full h-auto" src={maosLevantadas} alt="Mãos Levantadas" />
+                                <img className="h-auto mt-52" src={maosLevantadas} alt="Mãos Levantadas" />
                         </div>
                     </CarouselItem>
 
