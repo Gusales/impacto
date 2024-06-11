@@ -27,8 +27,28 @@
     "headerInputPlaceholder": "¿Qué estás buscando?",
     "headerPontos": "Puntos",
 
-    "boasVindasH1": "Impactando Vidas",
-    "boasVindasP": "¿Quieres hacer la diferencia, pero no conoces ninguna ONG?",
-    "boasVindasButton": "Impacta ONGs"
+    "destaquesCarousel1PrimeiraFrase": "HAGA Y MARQUE LA DIFERENCIA",
+    "destaquesCarousel1SegundaFrase": "¿Quieres marcar la diferencia pero no conoces ninguna ONG?",
+    "destaquesCarousel1TerceiraFrase": "ONGs Asociadas",
+    
+    "destaquesCarousel2PrimeiraFrase": "¡VIVE UNA EXPERIENCIA ÚNICA!",
+    "destaquesCarousel2SegundaFrase": "Dedica tu tiempo y talento para marcar la diferencia en la vida de quienes lo necesitan.",
+    "destaquesCarousel2TerceiraFrase": "Sé un Voluntario",
+    "destaquesCarousel2QuartaFrase": "Y Marca la Diferencia",
+
+    "destaquesCarousel3PrimeiraFrase": "¡CUPONES QUE HACEN BIEN!",
+    "destaquesCarousel3SegundaFrase": "Dona y comienza a acumular puntos, gana boletos y vales.",
+    "destaquesCarousel3TerceiraFrase": "Gana Puntos",
+    "destaquesCarousel3QuartaFrase": "¡Y Ahorra!",
+
+    "destaquesCarousel4PrimeiraFrase": "DONA Y MARCA LA DIFERENCIA",
+    "destaquesCarousel4SegundaFrase": "Registra tu ONG en",
+    "destaquesCarousel4TerceiraFrase": "y accede a oportunidades de colaboración.",
+    "destaquesCarousel4QuartaFrase": "Únete a",
+
+    "destaquesCarousel5PrimeiraFrase": "¡SÍGUENOS Y MANTENTE INFORMADO!",
+    "destaquesCarousel5SegundaFrase": "Sigue a",
+    "destaquesCarousel5TerceiraFrase": "en las redes sociales y mantente al tanto de nuestras noticias y oportunidades para involucrarte.",
+    "destaquesCarousel5QuartaFrase": "#UniendoCausasTransformandoVidas"
   }
 }

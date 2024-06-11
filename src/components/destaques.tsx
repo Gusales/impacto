@@ -6,9 +6,11 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+
 import { Instagram } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Facebook } from "lucide-react";
+
 import WomanDog from "@/assets/womanDog-destaques.svg"
 import Cadeirante from "@/assets/cadeirante-destaques.svg"
 import Cupons from "@/assets/cupons.svg"
@@ -16,7 +18,11 @@ import Criancas from "@/assets/criancas-destaques.svg"
 import CeInstagram from "@/assets/celInstagram.svg"
 import Ponte from "@/assets/ponte.svg"
 
+import { useTranslation } from "react-i18next";
+
 function Destaques() {
+    const { t } = useTranslation()
+
     return (
         <>
             <Carousel className="relative w-full mx-auto overflow-hidden shadow-[0px_4px_10px_0px_#807e7e]"
@@ -32,9 +38,9 @@ function Destaques() {
                             <div className="text-center mt-20 p-10">
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
-                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">DOE E FAÇA A DIFERENÇA</p>
-                                <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Quer fazer a diferença, mas não conhece nenhuma ONG?</p>
-                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>ONGs Parceiras</button></a>
+                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">{t('destaquesCarousel1PrimeiraFrase')}</p>
+                                <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">{t('destaquesCarousel1SegundaFrase')}</p>
+                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>{t('destaquesCarousel1TerceiraFrase')}</button></a>
                             </div>
                             <img className="h-screen pt-52" src={WomanDog} alt="Uma mulher segurando um cachorro" />
                         </div>
@@ -46,10 +52,10 @@ function Destaques() {
 
                                 <div className="text-center">
                                     <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
-                                    <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">VIVA UMA EXPERIÊNCIA UNICA!</p>
-                                    <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Dedique seu tempo e talento para fazer a diferença na vida de quem precisa.</p>
-                                    <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>Seja um Voluntário</button></a>
-                                    <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">E Faça a Diferença</p>
+                                    <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">{t('destaquesCarousel2PrimeiraFrase')}</p>
+                                    <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">{t('destaquesCarousel2SegundaFrase')}</p>
+                                    <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>{t('destaquesCarousel2TerceiraFrase')}</button></a>
+                                    <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">{t('destaquesCarousel2QuartaFrase')}</p>
                                 </div>
                             </div>
                                 <img className="m-auto mt-72" src={Cadeirante} alt="Um voluntário e senhor cadeirante" />
@@ -61,10 +67,10 @@ function Destaques() {
                             <div className="mt-20 p-10 absolute inset-0 flex flex-col items-center justify-center max-w-[50%]">
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
-                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">CUPONS QUE FAZEM BEM!</p>
-                                <p className="max-w-[60%] text-center text-[20px] mx-auto mt-[44px] text-[#061314] mb-[88px]">Doe e comece a acumular pontos, ganhe tickets e vauchers</p>
-                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer'>Ganhe Pontos</button></a>
-                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">E Economize!</p>
+                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">{t('destaquesCarousel3PrimeiraFrase')}</p>
+                                <p className="max-w-[60%] text-center text-[20px] mx-auto mt-[44px] text-[#061314] mb-[88px]">{t('destaquesCarousel3SegundaFrase')}</p>
+                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer'>{t('destaquesCarousel3TerceiraFrase')}</button></a>
+                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-5">{t('destaquesCarousel3QuartaFrase')}</p>
                             </div>
                             <img className="w-full h-auto" src={Cupons} alt="Ilustração dos pontos da impacto" />
                         </div>
@@ -75,9 +81,9 @@ function Destaques() {
                             <div className="text-center mt-20 p-10">
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
-                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">DOE E FAÇA A DIFERENÇA</p>
-                                <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Cadastre sua ONG na <strong className="text-[#004358]">IMPACTO</strong> e tenha acesso a oportunidades de colaboaração.</p>
-                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>Una-se a IMPACTO</button></a>
+                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">{t('destaquesCarousel4PrimeiraFrase')}</p>
+                                <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">{t('destaquesCarousel4SegundaFrase')} <strong className="text-[#004358]">IMPACTO</strong> {t('destaquesCarousel4TerceiraFrase')}</p>
+                                <a href="#"><button className='bg-[#004AAD] text-white w-[250px] h-[43px] rounded-[5px] text-[24px] cursor-pointer mt-[88px]'>{t('destaquesCarousel4QuartaFrase')} IMPACTO</button></a>
                             </div>
                             <img className="h-screen pt-52 mr-10" src={Criancas} alt="Crianças da Tanzânia" />
                         </div>
@@ -88,9 +94,9 @@ function Destaques() {
                             <div className="text-center mt-20 p-10">
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
 
-                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">SIGA-NOS E FIQUE POR DENTRO!</p>
-                                <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">Siga a <strong className="text-[#004358]">IMPACTO</strong> nas redes sociais e acompanhe nossas novidades e oportunidades de se envolver.</p>
-                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-10">#UnindoCausasTransformandoVidas</p>
+                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">{t('destaquesCarousel5PrimeiraFrase')}</p>
+                                <p className="max-w-[60%] text-[20px] mx-auto mt-[44px] text-[#061314]">{t('destaquesCarousel5SegundaFrase')} <strong className="text-[#004358]">IMPACTO</strong> {t('destaquesCarousel5TerceiraFrase')}</p>
+                                <p className="text-[24px] font-semibold leading-[35px] text-[#004358] mt-10">{t('destaquesCarousel5QuartaFrase')}</p>
 
                                 <div className="flex max-w-[60%] mx-auto pt-32 items-center justify-between">
                                     <a href="https://www.linkedin.com/company/impactoinspira/" target="_blank" className="flex"><Linkedin /><p className="ml-1">Linkedin</p></a>

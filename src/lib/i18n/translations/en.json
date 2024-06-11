@@ -27,8 +27,28 @@
     "headerInputPlaceholder": "What are you looking for?",
     "headerPontos": "Points",
 
-    "boasVindasH1": "Impacting Lives",
-    "boasVindasP": "Want to make a difference, but don't know any NGOs?",
-    "boasVindasButton": "Impact NGOs"
+    "destaquesCarousel1PrimeiraFrase": "DO AND MAKE A DIFFERENCE",
+    "destaquesCarousel1SegundaFrase": "Want to make a difference but don't know any NGOs?",
+    "destaquesCarousel1TerceiraFrase": "Partner NGOs",
+    
+    "destaquesCarousel2PrimeiraFrase": "LIVE A UNIQUE EXPERIENCE!",
+    "destaquesCarousel2SegundaFrase": "Dedicate your time and talent to make a difference in the lives of those in need.",
+    "destaquesCarousel2TerceiraFrase": "Be a Volunteer",
+    "destaquesCarousel2QuartaFrase": "And Make a Difference",
+
+    "destaquesCarousel3PrimeiraFrase": "COUPONS THAT DO GOOD!",
+    "destaquesCarousel3SegundaFrase": "Donate and start earning points, earn tickets and vouchers.",
+    "destaquesCarousel3TerceiraFrase": "Earn Points",
+    "destaquesCarousel3QuartaFrase": "And Save!",
+
+    "destaquesCarousel4PrimeiraFrase": "DONATE AND MAKE A DIFFERENCE",
+    "destaquesCarousel4SegundaFrase": "Register your NGO with",
+    "destaquesCarousel4TerceiraFrase": "and gain access to collaboration opportunities.",
+    "destaquesCarousel4QuartaFrase": "Join",
+
+    "destaquesCarousel5PrimeiraFrase": "FOLLOW US AND STAY INFORMED!",
+    "destaquesCarousel5SegundaFrase": "Follow",
+    "destaquesCarousel5TerceiraFrase": "on social media and keep up with our news and opportunities to get involved.",
+    "destaquesCarousel5QuartaFrase": "#UnitingCausesTransformingLives"
   }
 }
