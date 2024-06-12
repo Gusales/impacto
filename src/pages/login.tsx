@@ -12,10 +12,12 @@ export function Login(){
   const [loginType, setLoginType] = useState<'user' | 'ong'>('user')
   const { t } = useTranslation()
 
-  function handleChangeLogin() {
-    setLoginType(state => {
-      return state === "user" ? "ong" : "user"
-    })
+  function handleChangeLoginToONG(){
+    setLoginType("ong")
+  }
+
+  function handleChangeLoginToUser(){
+    setLoginType("user")
   }
   
 
@@ -43,15 +45,15 @@ export function Login(){
         </div>
 
         <div className="w-full flex flex-col mt-12 gap-2">
-          <button className={`p-5 w-[175px] ${loginType === 'user' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={handleChangeLogin}>
+          <button className={`p-5 w-[175px] ${loginType === 'user' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={handleChangeLoginToUser}>
             {t('loginButtonUser')}
           </button>
-          <button className={`p-5 w-[175px] ${loginType === 'ong' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={handleChangeLogin}>
+          <button className={`p-5 w-[175px] ${loginType === 'ong' ? "text-black bg-white font-bold" : "text-white"} rounded-r-full`} onClick={handleChangeLoginToONG}>
           {t('loginButtonONG')}
           </button>
         </div>
 
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 w-full">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 w-fit">
           <figure>
             <img src={Logo} alt="" className="w-[200px]" />
           </figure>
