@@ -9,6 +9,7 @@ import { Register } from './pages/register'
 
 import './lib/i18n'
 import './index.css'
+import { ShoppingPage } from './pages/shopping'
 
 const routers = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const routers = createBrowserRouter([
   {
     path: 'register',
     element: <Register />
+  },
+  {
+    path: 'shopping',
+    element: <ShoppingPage />
   }
 ])
 
