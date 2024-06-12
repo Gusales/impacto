@@ -8,6 +8,7 @@ import Login from '@/assets/login.png'
 import Moeda from '@/assets/moeda.png'
 
 import { useTranslation } from 'react-i18next'
+import { NavLink } from 'react-router-dom'
 
 export function Header(){
   const { t } = useTranslation()
@@ -16,9 +17,12 @@ export function Header(){
     <header className="w-full flex flex-col items-center gap-4 shadow-md fixed top-0 z-10 bg-white">
       <div className="bg-linear-blue w-full flex pt-4 pb-3 justify-center shadow-md">
         <div className="w-[80%] flex items-center justify-between">
-          <figure>
-            <img src={Logo} alt="Logo da Impacto" className="w-[68px]" />
-          </figure>
+         <NavLink to="/">
+            <figure>
+              <img src={Logo} alt="Logo da Impacto" className="w-[68px]" />
+            </figure>
+         </NavLink>
+          
 
           <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerSobreNos')}</a>
           <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerDoacao')}</a>
@@ -26,7 +30,7 @@ export function Header(){
 
           <div className="flex gap-2 items-center cursor-pointer hover:underline">
             <img src={Login} alt="" className="h-[40px] w-[40px]" />
-            <a href="login">{t('headerEntrar')}</a>
+            <NavLink to="/login">{t('headerEntrar')}</NavLink>
           </div>
 
           <SelectLanguages />
@@ -38,10 +42,10 @@ export function Header(){
           <Input placeholder={t('headerInputPlaceholder')} className="w-full bg-[#EDEDED] px-5 py-3" />
           <Search className="absolute top-5 right-3 -translate-y-1/2 -translate-x-1/2" />
         </div>
-        <button className="cursor-pointer flex items-center gap-2 hover:underline hover:underline-offset-2">
+        <NavLink to="/shopping" className="cursor-pointer flex items-center gap-2 hover:underline hover:underline-offset-2">
           <img src={Moeda} alt="icone de moeda" />
           <p>{t('headerPontos')}</p>  
-        </button> 
+        </NavLink> 
       </div>
     </header>
   )
