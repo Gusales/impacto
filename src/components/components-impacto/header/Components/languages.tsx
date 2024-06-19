@@ -1,18 +1,18 @@
 import * as React from "react"
 import { ChevronDown } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/shadcnUI/button"
 import {
   Command,
   CommandGroup,
   CommandItem,
   CommandList,
-} from "@/components/ui/command"
+} from "@/components/shadcnUI/command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/shadcnUI/popover"
 
 import BR from "@/assets/paises/br.svg"
 import ES from "@/assets/paises/es.svg"

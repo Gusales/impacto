@@ -1,10 +1,10 @@
-import { Header } from "@/components/header";
+import { Header } from "@/components/components-impacto/header/header";
 
-import Sacolas from '@/assets/images/sacolas.png'
+import Sacolas from '@/assets/images-shopping/sacolas.png'
 
 import { ChevronRight } from "lucide-react";
-import Footer from "@/components/footer";
-import { Recompensa } from "@/components/recompensa";
+import Footer from "@/components/components-impacto/footer";
+import { Recompensa } from "@/pages/Shopping/Components/recompensa";
 
 export function ShoppingPage(){
   document.title = "Resgate seus pontos || Impacto"

@@ -1,15 +1,15 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 
 import { Upload } from 'lucide-react'
 
 import { Steps } from "./steps";
 
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
-import { Textarea } from "./ui/textarea";
+import { Input } from "../../../components/shadcnUI/input";
+import { Label } from "../../../components/shadcnUI/label";
+import { Textarea } from "../../../components/shadcnUI/textarea";
 
-import { InputImpacto } from "./components-impacto/input";
-import { ButtonImpacto } from "./components-impacto/button";
+import { InputImpacto } from "../../../components/components-impacto/input";
+import { ButtonImpacto } from "../../../components/components-impacto/button";
 
 const etapas = ["informações", "sobre a ong", "contato", "senha"]
 

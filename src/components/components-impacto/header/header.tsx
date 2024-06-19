@@ -1,11 +1,11 @@
-import { Input } from '@/components/ui/input'
-import { SelectLanguages } from './languages'
+import { Input } from '@/components/shadcnUI/input'
+import { SelectLanguages } from '@/components/components-impacto/header/Components/languages'
 
 import { Search } from 'lucide-react'
-import Logo from '@/assets/Logo.svg'
+import Logo from '@/assets/images-header/Logo.svg'
 
-import Login from '@/assets/login.png'
-import Moeda from '@/assets/moeda.png'
+import Login from '@/assets/images-header/login.png'
+import Moeda from '@/assets/images-header/moeda.png'
 
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'

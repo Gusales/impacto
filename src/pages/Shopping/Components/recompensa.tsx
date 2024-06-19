@@ -1,6 +1,5 @@
-import Placeholder from '@/assets/images/placeholder-card-example.png'
+import Placeholder from '@/assets/images-shopping/placeholder-card-example.png'
 
-interface RecompensaProps {}
 export function Recompensa(){
   return(
     <article className="w-80 h-[450px] bg-[#DAF1FFAD] shadow-lg flex flex-col rounded-md overflow-hidden transition-all hover:scale-105">

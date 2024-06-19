@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import Logo from '@/assets/Logo.svg'
+import Logo from '@/assets/images-header/Logo.svg'
 
-import { RegisterOngForm } from "@/components/register-ong-form";
+import { RegisterOngForm } from "@/pages/Register/Components/register-ong-form";
 
 
 document.title = "Criar Conta || Impacto"

@@ -1,8 +1,8 @@
-import { LoginUserForm } from "@/components/login-user-form";
-import { LoginOngForm } from "@/components/login-ong-form";
+import { LoginOngForm } from "@/pages/Login/Components/login-ong-form";
+import { LoginUserForm } from "@/pages/Login/Components/login-user-form";
 
-import Logo from '@/assets/Logo.svg'
-import Bridge from '@/assets/bridge-logo.svg'
+import Logo from '@/assets/images-header/Logo.svg'
+import Bridge from '@/assets/images-impacto/bridge-logo.svg'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 

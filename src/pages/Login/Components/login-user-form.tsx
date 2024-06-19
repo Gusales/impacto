@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
-import { Button } from "./ui/button";
+import { Input } from "../../../components/shadcnUI/input";
+import { Label } from "../../../components/shadcnUI/label";
+import { Button } from "../../../components/shadcnUI/button";
 import { Eye, EyeOff } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-export function LoginOngForm(){
+export function LoginUserForm(){
   const [showPassword, setShowPassword] = useState(false)
   const { t } = useTranslation()
   function handleShowPassword() {
@@ -14,10 +14,10 @@ export function LoginOngForm(){
   return(
     <form action="" className="space-y-9">
       <div className="space-y-5">
-        <Label htmlFor="cnpj" className="font-normal">
-          {t('formONGCnpjLabel')}
+        <Label htmlFor="email" className="font-normal">
+          {t('formUserEmailLabel')}
         </Label>
-        <Input id="cnpj" className="w-full bg-[#EDEDED] p-6" placeholder={t('formONGCnpjInputPlaceholder')} />
+        <Input id="email" className="w-full bg-[#EDEDED] p-6" placeholder={t('formUserEmailInputPlaceholder')} />
       </div>
       <div className="space-y-5">
         <div className="flex justify-between items-center">

@@ -1,5 +1,5 @@
 import { ComponentProps } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../shadcnUI/button";
 
 type ButtonImpactoProps = ComponentProps<'button'> & {
   variant?: "primary" | "secondary"

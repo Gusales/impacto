@@ -4,19 +4,19 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/shadcnUI/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
 import { Instagram } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Facebook } from "lucide-react";
 
-import WomanDog from "@/assets/womanDog-destaques.svg"
-import Cadeirante from "@/assets/cadeirante-destaques.svg"
-import Cupons from "@/assets/cupons.svg"
-import Criancas from "@/assets/criancas-destaques.svg"
-import CeInstagram from "@/assets/celInstagram.svg"
-import Ponte from "@/assets/ponte.svg"
+import WomanDog from "@/assets/images-home/womanDog-destaques.svg"
+import Cadeirante from "@/assets/images-home/cadeirante-destaques.svg"
+import Cupons from "@/assets/images-home/cupons.svg"
+import Criancas from "@/assets/images-home/criancas-destaques.svg"
+import CeInstagram from "@/assets/images-home/celInstagram.svg"
+import Ponte from "@/assets/images-home/ponte.svg"
 
 import { useTranslation } from "react-i18next";
 

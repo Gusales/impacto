@@ -1,5 +1,5 @@
 import { ComponentProps } from "react";
-import { Input } from "../ui/input";
+import { Input } from "@/components/shadcnUI/input";
 
 type InputImpactoProps = ComponentProps<'input'>
 export function InputImpacto({ ...props}: InputImpactoProps){
