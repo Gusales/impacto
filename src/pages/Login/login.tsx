@@ -1,5 +1,5 @@
-import { LoginOngForm } from "@/pages/Login/Components/login-ong-form";
-import { LoginUserForm } from "@/pages/Login/Components/login-user-form";
+import { LoginOngForm } from "./Components/login-ong-form";
+import { LoginUserForm } from "./Components/login-user-form";
 
 import Logo from '@/assets/images-header/Logo.svg'
 import Bridge from '@/assets/images-impacto/bridge-logo.svg'
