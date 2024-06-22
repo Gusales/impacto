@@ -1,0 +1,63 @@
+{
+  "translation": {
+    "loginTitle": "Accede a la Plataforma",
+    "loginSlogan": "¡Uniendo causas, Transformando vidas!",
+    "loginFrase": "Inicia sesión o regístrate para empezar a impactar vidas hoy mismo.",
+    "loginTextPart1": "Sé el cambio que deseas ver en el mundo.",
+    "loginTextPart2": "¡Empieza ahora mismo en Impacto!",
+    "loginButtonUser": "Inicio de Sesión Usuario",
+    "loginButtonONG": "Inicio de Sesión ONG's",
+    "loginEscolhaLinguagem": "Elige el idioma",
+
+    "formUserEmailLabel": "Correo Electrónico",
+    "formUserEmailInputPlaceholder": "Ingresa tu correo electrónico",
+    "formONGCnpjLabel": "CNPJ",
+    "formONGCnpjInputPlaceholder": "Ingresa tu CNPJ",
+    "formPasswordLabel": "Contraseña",
+    "formPasswordInputPlaceholder": "Ingresa tu contraseña",
+    "formEsqueceuSuaSenha": "¿Olvidaste tu contraseña?",
+    "formSubmitButton": "Ingresar",
+    "formLoginCriarConta": "¿Aún no tienes una cuenta?",
+    "formLoginCriarContaLink": "Regístrate",
+  
+    "headerSobreNos": "Sobre Nosotros",
+    "headerDoacao": "Donación",
+    "headerTrabalhoVoluntario": "Trabajo Voluntario",
+    "headerEntrar": "Iniciar Sesión",
+    "headerInputPlaceholder": "¿Qué estás buscando?",
+    "headerPontos": "Puntos",
+
+    "destaquesCarousel1PrimeiraFrase": "HAGA Y MARQUE LA DIFERENCIA",
+    "destaquesCarousel1SegundaFrase": "¿Quieres marcar la diferencia pero no conoces ninguna ONG?",
+    "destaquesCarousel1TerceiraFrase": "ONGs Asociadas",
+    
+    "destaquesCarousel2PrimeiraFrase": "¡VIVE UNA EXPERIENCIA ÚNICA!",
+    "destaquesCarousel2SegundaFrase": "Dedica tu tiempo y talento para marcar la diferencia en la vida de quienes lo necesitan.",
+    "destaquesCarousel2TerceiraFrase": "Sé un Voluntario",
+    "destaquesCarousel2QuartaFrase": "Y Marca la Diferencia",
+
+    "destaquesCarousel3PrimeiraFrase": "¡CUPONES QUE HACEN BIEN!",
+    "destaquesCarousel3SegundaFrase": "Dona y comienza a acumular puntos, gana boletos y vales.",
+    "destaquesCarousel3TerceiraFrase": "Gana Puntos",
+    "destaquesCarousel3QuartaFrase": "¡Y Ahorra!",
+
+    "destaquesCarousel4PrimeiraFrase": "DONA Y MARCA LA DIFERENCIA",
+    "destaquesCarousel4SegundaFrase": "Registra tu ONG en",
+    "destaquesCarousel4TerceiraFrase": "y accede a oportunidades de colaboración.",
+    "destaquesCarousel4QuartaFrase": "Únete a",
+
+    "destaquesCarousel5PrimeiraFrase": "¡SÍGUENOS Y MANTENTE INFORMADO!",
+    "destaquesCarousel5SegundaFrase": "Sigue a",
+    "destaquesCarousel5TerceiraFrase": "en las redes sociales y mantente al tanto de nuestras noticias y oportunidades para involucrarte.",
+    "destaquesCarousel5QuartaFrase": "#UniendoCausasTransformandoVidas",
+
+    "recomendacoesDia": "Recomendaciones del día",
+    "conhecaOng": "Conoce una nueva ON",
+    "vagaIdeal": "TU TRABAJO IDEAL",
+    "tituloVaga": "Título del Trabajo",
+    "informacoes": "Ubicación | Hora",
+    "requisitos": "Requisitos Necesarios:",
+    "requisitoa": "Requisito",
+    "candidatar": "SOLICITAR AHORA"
+  }
+}

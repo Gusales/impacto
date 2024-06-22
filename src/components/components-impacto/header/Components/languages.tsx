@@ -1,22 +1,23 @@
 import * as React from "react"
 import { ChevronDown } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/shadcnUI/button"
 import {
   Command,
   CommandGroup,
   CommandItem,
   CommandList,
-} from "@/components/ui/command"
+} from "@/components/shadcnUI/command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/shadcnUI/popover"
 
 import BR from "@/assets/paises/br.svg"
 import ES from "@/assets/paises/es.svg"
 import US from "@/assets/paises/us.svg"
+import { useTranslation } from "react-i18next"
 
 import { translateText } from '@/utils/translate'
 
@@ -28,7 +29,7 @@ const languages = [
   },
   {
     value: "en",
-    label: "Inglês",
+    label: "English",
     flag: US,
   },
   {
@@ -40,7 +41,16 @@ const languages = [
 
 export function SelectLanguages() {
   const [open, setOpen] = React.useState(false)
-  const [value, setValue] = React.useState("pt")
+  const [value, setValue] = React.useState(localStorage.getItem('lang'))
+
+  const { i18n } = useTranslation()
+ 
+  function handleSetTranslation(currentValue: string){
+    setValue(currentValue === value ? "" : currentValue)
+    setOpen(state => !state)
+    i18n.changeLanguage(currentValue)
+    localStorage.setItem('lang', currentValue)
+  }
 
   React.useEffect(() => {
     console.log("Mudou")
@@ -78,10 +88,7 @@ export function SelectLanguages() {
               <CommandItem 
                 key={item.value}
                 value={item.value}
-                onSelect={(currentValue) => {
-                  setValue(currentValue === value ? "" : currentValue)
-                  setOpen(state => !state)
-                }}
+                onSelect={handleSetTranslation}
                 className="gap-2"
                 >
                   <img src={item.flag} className="rounded-full object-cover h-[20px] w-[20px]"/>

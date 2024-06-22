@@ -1,0 +1,63 @@
+{
+  "translation": {
+    "loginTitle": "Access the Platform",
+    "loginSlogan": "Uniting Causes, Transforming Lives!",
+    "loginFrase": "Log in or register to start impacting lives today.",
+    "loginTextPart1": "Be the change you wish to see in the world.",
+    "loginTextPart2": "Start right now at Impacto!",
+    "loginButtonUser": "User Login",
+    "loginButtonONG": "NGO Login",
+    "loginEscolhaLinguagem": "Choose the language",
+
+    "formUserEmailLabel": "Email",
+    "formUserEmailInputPlaceholder": "Enter your email",
+    "formONGCnpjLabel": "CNPJ",
+    "formONGCnpjInputPlaceholder": "Enter your CNPJ",
+    "formPasswordLabel": "Password",
+    "formPasswordInputPlaceholder": "Enter your password",
+    "formEsqueceuSuaSenha": "Forgot your password?",
+    "formSubmitButton": "Sign In",
+    "formLoginCriarConta": "Don't have an account yet?",
+    "formLoginCriarContaLink": "Sign Up",
+
+    "headerSobreNos": "About Us",
+    "headerDoacao": "Donation",
+    "headerTrabalhoVoluntario": "Volunteer Work",
+    "headerEntrar": "Sign In",
+    "headerInputPlaceholder": "What are you looking for?",
+    "headerPontos": "Points",
+
+    "destaquesCarousel1PrimeiraFrase": "DO AND MAKE A DIFFERENCE",
+    "destaquesCarousel1SegundaFrase": "Want to make a difference but don't know any NGOs?",
+    "destaquesCarousel1TerceiraFrase": "Partner NGOs",
+    
+    "destaquesCarousel2PrimeiraFrase": "LIVE A UNIQUE EXPERIENCE!",
+    "destaquesCarousel2SegundaFrase": "Dedicate your time and talent to make a difference in the lives of those in need.",
+    "destaquesCarousel2TerceiraFrase": "Be a Volunteer",
+    "destaquesCarousel2QuartaFrase": "And Make a Difference",
+
+    "destaquesCarousel3PrimeiraFrase": "COUPONS THAT DO GOOD!",
+    "destaquesCarousel3SegundaFrase": "Donate and start earning points, earn tickets and vouchers.",
+    "destaquesCarousel3TerceiraFrase": "Earn Points",
+    "destaquesCarousel3QuartaFrase": "And Save!",
+
+    "destaquesCarousel4PrimeiraFrase": "DONATE AND MAKE A DIFFERENCE",
+    "destaquesCarousel4SegundaFrase": "Register your NGO with",
+    "destaquesCarousel4TerceiraFrase": "and gain access to collaboration opportunities.",
+    "destaquesCarousel4QuartaFrase": "Join",
+
+    "destaquesCarousel5PrimeiraFrase": "FOLLOW US AND STAY INFORMED!",
+    "destaquesCarousel5SegundaFrase": "Follow",
+    "destaquesCarousel5TerceiraFrase": "on social media and keep up with our news and opportunities to get involved.",
+    "destaquesCarousel5QuartaFrase": "#UnitingCausesTransformingLives",
+
+    "recomendacoesDia": "Recommendations of the day",
+    "conhecaOng": "Get to know a new NGO",
+    "vagaIdeal": "YOUR IDEAL JOB",
+    "tituloVaga": "Job Title",
+    "informacoes": "Location | Time",
+    "requisitos": "Required Qualifications:",
+    "requisitoa": "Requirement",
+    "candidatar": "APPLY NOW"
+  }
+}
