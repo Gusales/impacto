@@ -10,6 +10,7 @@ import { Register } from './pages/Register/register'
 import './lib/i18n'
 import './index.css'
 import { ShoppingPage } from './pages/Shopping/shopping'
+import { Doacao } from './pages/Doacao/doacao'
 
 const routers = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const routers = createBrowserRouter([
   {
     path: 'shopping',
     element: <ShoppingPage />
+  },
+  {
+    path: 'doacao',
+    element: <Doacao />
   }
 ])
 
