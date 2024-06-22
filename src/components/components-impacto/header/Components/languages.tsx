@@ -19,8 +19,6 @@ import ES from "@/assets/paises/es.svg"
 import US from "@/assets/paises/us.svg"
 import { useTranslation } from "react-i18next"
 
-import { translateText } from '@/utils/translate'
-
 const languages = [
   {
     value: "pt",
@@ -51,10 +49,6 @@ export function SelectLanguages() {
     i18n.changeLanguage(currentValue)
     localStorage.setItem('lang', currentValue)
   }
-
-  React.useEffect(() => {
-    console.log("Mudou")
-  }, [value])
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
