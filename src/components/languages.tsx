@@ -18,6 +18,8 @@ import BR from "@/assets/paises/br.svg"
 import ES from "@/assets/paises/es.svg"
 import US from "@/assets/paises/us.svg"
 
+import { translateText } from '@/utils/translate'
+
 const languages = [
   {
     value: "pt",
@@ -39,6 +41,10 @@ const languages = [
 export function SelectLanguages() {
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState("pt")
+
+  React.useEffect(() => {
+    console.log("Mudou")
+  }, [value])
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
