@@ -2,7 +2,7 @@ import { Input } from '@/components/shadcnUI/input'
 import { SelectLanguages } from '@/components/components-impacto/header/Components/languages'
 
 import { Search } from 'lucide-react'
-import Logo from '@/assets/images-header/Logo.svg'
+import Logo from '@/assets/images-impacto/Logo.svg'
 
 import Login from '@/assets/images-header/login.png'
 import Moeda from '@/assets/images-header/moeda.png'
@@ -24,7 +24,7 @@ export function Header(){
          </NavLink>
           
 
-          <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerSobreNos')}</a>
+          <NavLink to="/sobrenos" className="transition-all hover:underline hover:underline-offset-2">{t('headerSobreNos')}</NavLink>
           <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerDoacao')}</a>
           <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerTrabalhoVoluntario')}</a>
 

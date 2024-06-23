@@ -1,15 +1,16 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import { Upload } from 'lucide-react'
 
 import { Steps } from "./steps";
 
-import { Input } from "../../../components/shadcnUI/input";
-import { Label } from "../../../components/shadcnUI/label";
-import { Textarea } from "../../../components/shadcnUI/textarea";
+import { Input } from "@/components/shadcnUI/input";
+import { Label } from "@/components/shadcnUI/label";
+import { Textarea } from "@/components/shadcnUI/textarea";
 
-import { InputImpacto } from "../../../components/components-impacto/input";
-import { ButtonImpacto } from "../../../components/components-impacto/button";
+import { InputImpacto } from "@/components/components-impacto/input";
+import { ButtonImpacto } from "@/components/components-impacto/button";
 
 const etapas = ["informações", "sobre a ong", "contato", "senha"]
 
@@ -145,7 +146,7 @@ export function RegisterOngForm(){
 
         <div className="flex items-center gap-2">
           <p>Já possui uma conta?</p>
-          <a href="/login" className="text-[#004AAD] font-semibold hover:underline hover:underline-offset-2">Faça login</a>
+          <NavLink to="/login" className="text-[#004AAD] font-semibold hover:underline hover:underline-offset-2">Faça login</NavLink>
         </div>
       </div>
     </form>

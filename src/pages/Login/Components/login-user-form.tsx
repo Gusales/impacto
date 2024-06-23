@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { Input } from "../../../components/shadcnUI/input";
-import { Label } from "../../../components/shadcnUI/label";
-import { Button } from "../../../components/shadcnUI/button";
-import { Eye, EyeOff } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+
+import { Eye, EyeOff } from "lucide-react";
+
+import { Input } from "@/components/shadcnUI/input";
+import { Label } from "@/components/shadcnUI/label";
+import { Button } from "@/components/shadcnUI/button";
 
 export function LoginUserForm(){
   const [showPassword, setShowPassword] = useState(false)
@@ -40,7 +43,7 @@ export function LoginUserForm(){
 
       <div className="flex items-center gap-2">
         <p>{t('formLoginCriarConta')}</p>
-        <a href="/register" className="text-[#004AAD] font-semibold hover:underline hover:underline-offset-2">{t('formLoginCriarContaLink')}</a>
+        <NavLink to="/register" className="text-[#004AAD] font-semibold hover:underline hover:underline-offset-2">{t('formLoginCriarContaLink')}</NavLink>
       </div>
     </form>
   )

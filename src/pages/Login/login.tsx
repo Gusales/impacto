@@ -1,14 +1,16 @@
-import { LoginOngForm } from "./Components/login-ong-form";
-import { LoginUserForm } from "./Components/login-user-form";
-
-import Logo from '@/assets/images-header/Logo.svg'
-import Bridge from '@/assets/images-impacto/bridge-logo.svg'
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { LoginOngForm } from "./Components/login-ong-form";
+import { LoginUserForm } from "./Components/login-user-form";
 
-document.title = "Login || Impacto"
+import Logo from '@/assets/images-impacto/Logo.svg'
+import Bridge from '@/assets/images-impacto/bridge-logo.svg'
+
+import styles from './style.module.css'
+
 export function Login(){
+  document.title = "Login || Impacto"
   const [loginType, setLoginType] = useState<'user' | 'ong'>('user')
   const { t } = useTranslation()
 
@@ -38,7 +40,7 @@ export function Login(){
         }
 
       </main>
-      <section className="bg-login bg-cover h-screen hidden lg:flex flex-col relative items-center">
+      <section className={`${styles.bgImage} bg-cover h-screen hidden lg:flex flex-col relative items-center`}>
         <div className="block mt-16 font-medium text-center text-xl">
           <p>{t('loginTextPart1')}</p>
           <p>{t('loginTextPart2')}</p>

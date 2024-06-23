@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import Logo from '@/assets/images-header/Logo.svg'
+import styles from './style.module.css'
 
-import { RegisterOngForm } from "@/pages/Register/Components/register-ong-form";
+import Logo from '@/assets/images-impacto/Logo.svg'
+
+import { RegisterOngForm } from "./Components/register-ong-form";
 
 
 document.title = "Criar Conta || Impacto"
@@ -19,17 +21,17 @@ export function Register(){
   
   return (
     <div className="lg:grid lg:grid-cols-2 flex">
-      <section className="bg-login bg-cover h-screen hidden lg:flex flex-col relative items-center">
+      <section className={`${styles.bgImage} bg-cover h-screen hidden lg:flex flex-col relative items-center`}>
         <div className="block mt-16 font-medium text-center text-xl">
           <p>{t('loginTextPart1')}</p>
           <p>{t('loginTextPart2')}</p>
         </div>
 
-        <div className="w-full flex flex-col items-end mt-12 gap-2">
-          <button className={`p-5 w-[175px] text-black ${registerType === 'user' && "bg-white font-bold" || "font-medium"} rounded-l-full`} onClick={handleChangeLogin}>
+        <div className="w-full flex flex-col items-end mt-20 gap-2">
+          <button className={`p-5 w-[175px] ${registerType === 'user' && "bg-white font-bold text-black" || "text-white font-bold"} rounded-l-full`} onClick={handleChangeLogin}>
             {t('loginButtonUser')}
           </button>
-          <button className={`p-5 w-[175px] text-black ${registerType === 'ong' && "bg-white font-bold" || "font-medium"} rounded-l-full`} onClick={handleChangeLogin}>
+          <button className={`p-5 w-[175px] ${registerType === 'ong' && "bg-white font-bold text-black" || "text-white font-medium"} rounded-l-full`} onClick={handleChangeLogin}>
           {t('loginButtonONG')}
           </button>
         </div>
