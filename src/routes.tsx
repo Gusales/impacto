@@ -5,6 +5,7 @@ import { ShoppingPage } from './pages/Shopping/shopping'
 import { Doacao } from './pages/Doacao/doacao'
 
 import { createBrowserRouter } from 'react-router-dom'
+import { Sobre } from './pages/Sobre/sobre'
 
 export const routers = createBrowserRouter([
   {
@@ -26,5 +27,9 @@ export const routers = createBrowserRouter([
   {
     path: 'doacao',
     element: <Doacao />
+  },
+  {
+    path: 'sobrenos',
+    element: <Sobre />
   }
 ])
