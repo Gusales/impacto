@@ -107,7 +107,7 @@ export function Sobre() {
 
                 <section className="space-y-8 w-full mt-20">
                     <h2 className="text-center text-3xl font-semibold">Conheça a equipe Impacto!</h2>
-                    <div className="grid grid-cols-2 gap-y-5">
+                    <div className="flex flex-col gap-10 md:grid grid-cols-2 md:gap-y-5">
                         {impactantes.map((impactante, index) => (
                             <Impactante 
                                 atuacao={impactante.cargo} 
@@ -121,9 +121,9 @@ export function Sobre() {
                     </div>
                 </section>
 
-                <section className="flex flex-col items-center justify-center pt-16 gap-10 h-screen">
+                <section className="flex flex-col items-center justify-center pt-16 gap-10 md:h-screen mt-20 md:mt-0">
                   <h2 className="text-center text-2xl font-semibold">Um pouco sobre nossa identidade</h2>
-                  <div className="grid grid-cols-3 gap-x-4 text-center">
+                  <div className="flex flex-col gap-10 md:grid grid-cols-3 md:gap-x-4 text-center">
                     <article className="flex flex-col items-center gap-5">
                       <div className="h-[120px] flex items-center justify-center hover:scale-110 transition-all">
                         <p className="text-4xl font-medium uppercase tracking-widest text-[#004358]">Impacto</p>
@@ -153,7 +153,7 @@ export function Sobre() {
                   </div>
                 </section>
 
-                <section className="h-[90vh]">
+                <section className="mt-20 md:mt-0 md:h-[90vh]">
                   <h2 className="text-center text-2xl font-semibold">Nossos parceiros</h2>
                   <p className="mt-4 text-center">Temos um profundo agradecimento aos nossos parceiros por se juntarem a nossa comunidade e conseguirem transformar vidas ao redor do mundo!</p>
                   <div className="flex items-center gap-10 justify-center mt-10">
