@@ -29,7 +29,7 @@ export function Login(){
         <div className="flex items-center gap-2">
           <img src={Bridge} className="w-12" />
           <h2 className="font-semibold text-xl uppercase text-[#004AAD]">
-            {t('loginSlogan')}
+            {t('slogan')}
           </h2>
         </div>
         <h1 className="text-4xl font-bold leading-relaxed">{t('loginTitle')}</h1>

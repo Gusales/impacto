@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next"
+
 import { Header } from "@/components/components-impacto/header/header"
 import styles from './style.module.css'
 import Footer from "@/components/components-impacto/footer"
@@ -74,39 +76,43 @@ import Proa from './assets/images/parceiros/instituto_proa.jpg'
 import { Parceiro } from "./Components/parceiro"
 
 export function Sobre() {
+  const { t } = useTranslation()
+
     document.title = "Sobre nós da Impacto"
     return(
         <div className={`${styles.bgImage} bg-no-repeat bg-cover flex flex-col items-center`}>
             <Header />
             <main className="w-4/5 mt-[40%] lg:mt-[175px] flex flex-col items-center gap-4 mb-10">
                 <div className="text-center border-b-4 border-[#004AAD] w-fit mb-12">
-                    <h1 className="text-3xl">Unindo Causas, Transformando Vidas!</h1>
+                    <h1 className="text-3xl">{t('slogan')}</h1>
                 </div>
 
                 <Content 
-                    content="A Impacto surgiu com 7 pessoas que se conheceram no Instituto PROA, lugar onde é oferecido um curso de programação, esse curso consiste em realizar um projeto em grupo chamado Demoday onde você tem que fazer uma apresentação do mesmo. a partir disso surgiu a ideia da Impacto e vimos o quanto ONG’s e Instituições passam por bastante dificuldade. Por isso o que era um projeto se transformou em uma Startup pois sabemos que nos podemos transformar vidas e contribuir para uma sociedade melhor."
+                    content={t('sobreSurgiuImpacto')}
                     imgAlt="Imagem dos fundadores da Impacto, onde comemoram a formação do grupo, todos estão muito sorridentes na foto"
                     imgSrc={EquipeImpacto}
-                    title="Como surgiu a Impacto?"
+                    title={t('sobreSurgiuImpactoTitulo')}
                 />
 
                 <Content
-                    content="Nossa missão é ser a ponte entre o desejo de ajudar e a oportunidade de fazer a diferença. Na nossa plataforma, unimos corações generosos a causas transformadoras, oferecendo uma experiência única que permite às pessoas contribuir para um mundo melhor, seja mediante doações financeiras ou envolvimento voluntário."
-                    title="Nossa missão"
+                    content={t('sobreNossaMissao')}
+                    title={t('sobreNossaMissaoTitulo')}
                     imgAlt="Imagem da Logo da nossa plataforma, uma ponte, simbolizando a conexão entre doadores e organizações não governamentais"
                     imgSrc={Logo}
                     imgPosition="left"
                 />
 
                 <Content
-                    title="Nossa visão"
-                    content="Transformar o mundo em um lugar onde a generosidade é uma força poderosa e acessível a todos, conseguindo capacitar pessoas a se tornarem agentes da mudança."
+                    title={t('sobreNossaVisaoTitulo')}
+                    content={t('sobreNossaVisao')}
                     imgSrc={Visao}
                     imgAlt="Imagem de um mundo sendo segurado por mãos, que está passando por transformações"
                 />
 
                 <section className="space-y-8 w-full mt-20">
-                    <h2 className="text-center text-3xl font-semibold">Conheça a equipe Impacto!</h2>
+                    <h2 className="text-center text-3xl font-semibold">
+                      {t('sobreConhecaNossaEquipe')}
+                    </h2>
                     <div className="flex flex-col gap-10 md:grid grid-cols-2 md:gap-y-5">
                         {impactantes.map((impactante, index) => (
                             <Impactante 
@@ -122,15 +128,21 @@ export function Sobre() {
                 </section>
 
                 <section className="flex flex-col items-center justify-center pt-16 gap-10 md:h-screen mt-20 md:mt-0">
-                  <h2 className="text-center text-2xl font-semibold">Um pouco sobre nossa identidade</h2>
+                  <h2 className="text-center text-2xl font-semibold">
+                    {t('sobreIdentidadeVisualTitulo')}
+                  </h2>
                   <div className="flex flex-col gap-10 md:grid grid-cols-3 md:gap-x-4 text-center">
                     <article className="flex flex-col items-center gap-5">
                       <div className="h-[120px] flex items-center justify-center hover:scale-110 transition-all">
                         <p className="text-4xl font-medium uppercase tracking-widest text-[#004358]">Impacto</p>
                       </div>
 
-                      <h3 className="font-medium text-xl leading-relaxed text-[#004358]">Por que Impacto?</h3>
-                      <p>Escolhemos Impacto pois nós queremos causar impacto em todo o mundo com a nossa plataforma, e também percebemos que essa palavra é usada cotidianamente quando se fala em transformar vidas</p>
+                      <h3 className="font-medium text-xl leading-relaxed text-[#004358]">
+                        {t('sobrePorQueImpactoTitulo') + " Impacto?"}
+                      </h3>
+                      <p>
+                        {t('sobrePorQueImpacto')}
+                      </p>
                     </article>
 
                     <article className="flex flex-col items-center gap-5">
@@ -138,24 +150,38 @@ export function Sobre() {
                         <img src={Logo} alt="Logo da Impacto" />
                       </figure>
 
-                      <h3 className="font-medium text-xl leading-relaxed text-[#004358]">Uma ponte?</h3>
-                      <p>Sim! Nossa logo simboliza uma ponte, pois nosso intuito é ser a ponte entre ONGs e doadores</p>
+                      <h3 className="font-medium text-xl leading-relaxed text-[#004358]">
+                        {t('sobrePorQuePonteTitulo')}
+                      </h3>
+                      <p>
+                        {t('sobrePorQuePonte')}
+                      </p>
                     </article>
 
                     <article className="flex flex-col items-center gap-5">
                       <div className="h-[120px] flex items-center justify-center hover:scale-110 transition-all">
-                        <p className="text-2xl font-medium uppercase tracking-widest text-[#004358]">Unindo Causas, transformando vidas!</p>
+                        <p className="text-2xl font-medium uppercase tracking-widest text-[#004358]">
+                          {t('slogan')}
+                        </p>
                       </div>
 
-                      <h3 className="font-medium text-xl leading-relaxed text-[#004358]">Qual é a nossa frase impactante?</h3>
-                      <p>Nosso slogan representa o que queremos trazer para o mundo, unir causas (ONGS e Doadores), transformando vidas(Ajudar quem estar ajudando)</p>
+                      <h3 className="font-medium text-xl leading-relaxed text-[#004358]">
+                        {t('sobrePorQueSloganTitulo')}
+                      </h3>
+                      <p>
+                        {t('sobrePorQueSlogan')}
+                      </p>
                     </article>
                   </div>
                 </section>
 
                 <section className="mt-20 md:mt-0 md:h-[90vh]">
-                  <h2 className="text-center text-2xl font-semibold">Nossos parceiros</h2>
-                  <p className="mt-4 text-center">Temos um profundo agradecimento aos nossos parceiros por se juntarem a nossa comunidade e conseguirem transformar vidas ao redor do mundo!</p>
+                  <h2 className="text-center text-2xl font-semibold">
+                    {t('sobreNossosParceiros')}
+                  </h2>
+                  <p className="mt-4 text-center">
+                    {t('sobreNossosParceirosTexto')}
+                  </p>
                   <div className="flex items-center gap-10 justify-center mt-10">
                     <Parceiro cover={Proa} coverAlt="Logo do Instituto PROA" nome="Instituto PROA" />
                     <Parceiro cover={PulseMais} coverAlt="Logo da ONG Pulse Mais" nome="Pulse Mais" />
