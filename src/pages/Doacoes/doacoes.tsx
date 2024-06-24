@@ -29,28 +29,28 @@ export function Doacoes(){
   return(
     <div className="absolute inset-0 flex flex-col items-center">
       <Header />
-      <main className="w-4/5 mt-[40%] lg:mt-[175px] pb-8">
+      <main className="w-4/5 mt-[175px] pb-8">
          <h2 className="text-2xl font-medium">Atalhos rápidos</h2>
 
-         <section className="grid grid-cols-2 gap-x-4 mt-8">
-          <article className="bg-[#DAF1FF] p-4 rounded-2xl shadow-lg flex gap-4">
-            <div className="flex flex-col justify-between gap-4">
+         <section className="flex flex-col gap-4 lg:grid grid-cols-2 lg:gap-x-4 mt-8">
+          <article className="bg-[#DAF1FF] p-4 rounded-2xl shadow-lg flex justify-between gap-4">
+            <div className="flex flex-col justify-between items-center sm:items-start gap-4">
               <h3 className="text-xl font-medium">Doe para todos!</h3>
-              <p className="w-3/4 text-sm">Não tem nenhuma ONG em específico para doar? Por aqui sua doação será distribuído igualmente para todas as ONG’s cadastradas!</p>
+              <p className="sm:w-3/4 text-sm">Não tem nenhuma ONG em específico para doar? Por aqui sua doação será distribuído igualmente para todas as ONG’s cadastradas!</p>
               <button className="w-fit py-1  px-7 text-white bg-[#004AAD] font-medium hover:opacity-85 transition-all rounded">Doe aqui</button>
             </div>
-            <figure>
+            <figure className="w-full hidden sm:flex items-center justify-center lg:w-[300px] xl:w-[200px]">
               <img 
                 src={DoeParaTodos} 
                 alt="Imagem de uma pessoa branca, vestida com roupas sociais e sentada em uma cadeira que está segurando um coração azul" 
-                className="h-full w-[200px]"  
+                className="h-[150px] w-[75px] lg:h-full lg:w-full"  
               />
             </figure>
           </article>
-          <article className="bg-[#DAF1FF] p-4 rounded-2xl shadow-lg flex flex-col items-center">
+          <article className="bg-[#DAF1FF] p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center sm:justify-start">
             <h3 className="text-xl font-medium">Meus favoritos</h3>
             <div className="flex-1 flex items-center justify-center">
-              <p className="text-sm font-light w-3/4 text-center text-[#565656]">Você ainda não favoritou nenhuma ONG, que tal fazer isso agora?</p>
+              <p className="text-sm font-light sm:w-3/4 text-center text-[#565656]">Você ainda não favoritou nenhuma ONG, que tal fazer isso agora?</p>
             </div>
           </article>
          </section>
@@ -62,7 +62,7 @@ export function Doacoes(){
           <div className="mt-4">
             <h2 className="text-xl font-medium">Busque por causas:</h2>
 
-            <div className="w-full flex justify-between mt-1 mb-8">
+            <div className="w-full flex flex-wrap justify-between mt-1 mb-8 gap-y-4">
               <Tag>Crianças</Tag>
               <Tag>Animais</Tag>
               <Tag>Combate à fome</Tag>

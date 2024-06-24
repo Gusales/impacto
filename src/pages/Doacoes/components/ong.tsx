@@ -9,9 +9,9 @@ interface OngProps{
 
 export function Ong({ idOng, image, nome, sobreOng }: OngProps){
   return(
-    <li className="flex gap-8">
+    <li className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
       <figure>
-        <img src={image} alt="Exemplo de ONG" className="w-[150px] h-[150px] object-cover rounded-2xl" />
+        <img src={image} alt="Exemplo de ONG" className="min-w-[150px] h-[150px] object-cover rounded-2xl" />
       </figure>
 
       <div className="space-y-2">
