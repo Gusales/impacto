@@ -6,6 +6,7 @@ import styles from './style.module.css'
 import Logo from '@/assets/images-impacto/Logo.svg'
 
 import { RegisterOngForm } from "./Components/register-ong-form";
+import { RegisterUserForm } from "./Components/register-user-form";
 
 
 document.title = "Criar Conta || Impacto"
@@ -36,7 +37,7 @@ export function Register(){
           </button>
         </div>
 
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 w-full">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-4 w-fit">
           <figure>
             <img src={Logo} alt="" className="w-[200px]" />
           </figure>
@@ -50,7 +51,7 @@ export function Register(){
         </p>
 
         {
-          registerType === "user" ? "registrar User" : <RegisterOngForm />
+          registerType === "user" ? <RegisterUserForm /> : <RegisterOngForm />
         }
       </main>
     </div>
