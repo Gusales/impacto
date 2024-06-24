@@ -9,7 +9,7 @@ import Logo from '@/assets/images-placeholder/logo.jpg'
 import ImagePlaceholder from '@/assets/images-placeholder/Image-Vaga.jpg'
 import Footer from "@/components/components-impacto/footer";
 
-export function Doacao(){
+export function Doar(){
   return(
     <div className="absolute inset-0 flex flex-col items-center">
       <Header />
