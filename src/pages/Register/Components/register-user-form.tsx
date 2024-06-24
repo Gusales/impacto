@@ -39,11 +39,11 @@ export function RegisterUserForm(){
       <section className={`${step === 0 ? "flex" : "hidden"} flex-col gap-2`}>
         <div className="space-y-4 mb-3">
           <Label htmlFor="name">Nome:</Label>
-          <InputImpacto id="name" placeholder="Digite o nome da ONG" />
+          <InputImpacto id="name" placeholder="Digite seu nome" />
         </div>
         <div className="space-y-4 mb-3">
           <Label htmlFor="cpf">CPF:</Label>
-          <InputImpacto id="cpf" placeholder="Digite o CNPJ da ONG" />
+          <InputImpacto id="cpf" placeholder="Digite o seu CPF" />
         </div>
         <div className="space-y-1 mb-3 flex flex-col gap-2">
           <Label htmlFor="genero" className="leading-relaxed mt-0 p-0">Qual seu gênero</Label>
