@@ -74,7 +74,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        'montserrat': ["Montserrat", "sans-serif"]
+        'montserrat': ["Montserrat", "sans-serif"],
+        'muli': ["muli", "sans-serif"]
       },
       backgroundImage: {
         'login': 'url("./src/assets/images-login/login-background.jpg")',
