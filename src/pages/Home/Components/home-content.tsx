@@ -6,16 +6,16 @@ function HomeContent() {
 
     return (
         <>
-            <main>
+            <main className="padding-pagina">
                     <div>
                         <h2 className="text-[28px] font-[500] m-5">{t('recomendacoesDia')}</h2>
                         <p className="font-[#313131] text-[18px] ml-5">{t('conhecaOng')}</p>
 
 
                         <div className="flex m-5 mb-28 justify-between">
-                            <a href="#"><img className="rounded-xl" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
-                            <a href="#"><img className="rounded-xl" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
-                            <a href="#"><img className="rounded-xl" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
+                            <a href="#"><img className="rounded-xl quadrado" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
+                            <a href="#"><img className="rounded-xl quadrado" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
+                            <a href="#"><img className="rounded-xl quadrado" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
                         </div>
                     </div>
 
@@ -23,7 +23,7 @@ function HomeContent() {
                     <h2 className="m-5 font-[600] text-[28px]">{t('vagaIdeal')}</h2>
 
                     <div className="flex justify-between">
-                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] p-5">
+                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
                             <div className="flex items-center justify-center">
                                 <div className="flex items-center space-x-4">
                                     <div>
@@ -45,7 +45,7 @@ function HomeContent() {
                             </div>
                         </section>
 
-                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] p-5">
+                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
                             <div className="flex items-center justify-center">
                                 <div className="flex items-center space-x-4">
                                     <div>
@@ -67,7 +67,7 @@ function HomeContent() {
                             </div>
                         </section>
 
-                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] p-5">
+                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
                             <div className="flex items-center justify-center">
                                 <div className="flex items-center space-x-4">
                                     <div>
