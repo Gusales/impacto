@@ -12,7 +12,12 @@ export function ShoppingPage(){
     <div className="absolute inset-0 flex flex-col items-center">
       <Header />
       <div className="mt-[50%] w-[80%] mb-6 sm:mt-[12%]">
-        <h1 className="text-2xl font-medium">Impacto Points</h1>
+        <h1 className="text-2xl font-semibold">
+          Já fez uma doação hoje?
+        </h1>
+        <h2 className="text-lg font-medium">
+          Queremos te recompensar por isso!
+        </h2>
 
         <div className="flex flex-col items-center lg:grid grid-cols-2 lg:space-x-4">
           <Hero buttonText="Confira" content="Aumete seus pontos fazendo doações e trabalhos voluntários!" title={`Olá${` Gustavo`}`} />
