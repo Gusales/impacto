@@ -3,6 +3,9 @@
     "impacto": "Impact",
     "slogan": "Uniting Causes, Transforming Lives!",
 
+    "saibaMais": "Learn more",
+    "vejaMais": "See more",
+
     "loginTitle": "Access the Platform",
     "loginFrase": "Log in or register to start impacting lives today.",
     "loginTextPart1": "Be the change you wish to see in the world.",
@@ -70,7 +73,7 @@
     "sobreNossaVisao": "Transform the world into a place where generosity is a powerful and accessible force for all, enabling people to become agents of change.",
     "sobreConhecaNossaEquipe": "Meet the Impact Team!",
     "sobreIdentidadeVisualTitulo": "A little about our identity",
-    "sobrePorQueImpactoTitulo": "Why",
+    "sobrePorQueImpactoTitulo": "Why Impact?",
     "sobrePorQueImpacto": "We chose Impact because we want to make an impact around the world with our platform, and we also noticed that this word is commonly used when talking about transforming lives.",
     "sobrePorQuePonteTitulo": "A bridge?",
     "sobrePorQuePonte": "Yes! Our logo symbolizes a bridge because our intention is to be the bridge between NGOs and donors.",
@@ -78,6 +81,22 @@
     "sobrePorQueSlogan": "This is our slogan, which represents what we want to bring to the world, uniting causes (NGOs and donors), transforming lives (helping those who are helping).",
     "sobreNossosParceiros": "Our Partners",
     "sobreNossosParceirosTexto": "We deeply thank our partners for joining our community and managing to transform lives around the world!",
-    "saibaMais": "Learn more"
+
+    "doacoesAcoesRapidas": "Quick Shortcuts",
+    "doacoesDoeParaTodos": "Donate to all!",
+    "doacoesDoeAqui": "Donate here",
+    "doacoesDoeParaTodosText": "Don't have a specific NGO to donate to? Here your donation will be distributed equally among all registered NGOs!",
+    "doacooesDoeParaTodosImageAlt": "Image of a white person, dressed in social clothes and sitting in a chair holding a blue heart",
+    "doacoesFavoritosTitle": "My Favorites",
+    "doacoesFavoritosEmpty": "You haven't favorited any NGO yet, how about doing it now?",
+    "doacoesFacaUma": "Make a Donation",
+    "doacoesFacaUmaText": "Choose someone to impact",
+    "doacoesCausas": "Search by causes",
+    "doacaoCausaCriança": "Children",
+    "doacaoCausaAnimais": "Animals",
+    "doacaoCausaCombateFome": "Fighting Hunger",
+    "doacaoCausaIdosos": "Elderly",
+    "doacaoCausaSituacaoRua": "Homelessness",
+    "doacaoCausaOutros": "Others"
   }
 }

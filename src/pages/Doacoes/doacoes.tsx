@@ -8,6 +8,7 @@ import Proa from '../Sobre/assets/images/parceiros/instituto_proa.jpg'
 
 import { Tag } from "./components/tag";
 import { Ong } from "./components/ong";
+import { useTranslation } from "react-i18next";
 
 const ongs = [
   {
@@ -26,49 +27,69 @@ const ongs = [
 
 export function Doacoes(){
   document.title = "Faça uma doação || Impacto"
+  const { t } = useTranslation()
+  
   return(
     <div className="absolute inset-0 flex flex-col items-center">
       <Header />
       <main className="w-4/5 mt-[175px] pb-8">
-         <h2 className="text-2xl font-medium">Atalhos rápidos</h2>
+         <h2 className="text-2xl font-medium">
+          {t('doacoesAcoesRapidas')}
+         </h2>
 
          <section className="flex flex-col gap-4 lg:grid grid-cols-2 lg:gap-x-4 mt-8">
           <article className="bg-[#DAF1FF] p-4 rounded-2xl shadow-lg flex justify-between gap-4">
             <div className="flex flex-col justify-between items-center sm:items-start gap-4">
-              <h3 className="text-xl font-medium">Doe para todos!</h3>
-              <p className="sm:w-3/4 text-sm">Não tem nenhuma ONG em específico para doar? Por aqui sua doação será distribuído igualmente para todas as ONG’s cadastradas!</p>
-              <button className="w-fit py-1  px-7 text-white bg-[#004AAD] font-medium hover:opacity-85 transition-all rounded">Doe aqui</button>
+              <h3 className="text-xl font-medium">
+                {t('doacoesDoeParaTodos')}
+              </h3>
+              <p className="sm:w-3/4 text-sm">
+                {t('doacoesDoeParaTodosText')}
+              </p>
+              <button className="w-fit py-1  px-7 text-white bg-[#004AAD] font-medium hover:opacity-85 transition-all rounded">
+                {t('doacoesDoeAqui')}
+              </button>
             </div>
             <figure className="w-full hidden sm:flex items-center justify-center lg:w-[300px] xl:w-[200px]">
               <img 
                 src={DoeParaTodos} 
-                alt="Imagem de uma pessoa branca, vestida com roupas sociais e sentada em uma cadeira que está segurando um coração azul" 
+                alt={t('doacooesDoeParaTodosImageAlt')} 
                 className="h-[150px] w-[75px] lg:h-full lg:w-full"  
               />
             </figure>
           </article>
           <article className="bg-[#DAF1FF] p-4 rounded-2xl shadow-lg flex flex-col items-center justify-center sm:justify-start">
-            <h3 className="text-xl font-medium">Meus favoritos</h3>
+            <h3 className="text-xl font-medium">
+              {t('doacoesFavoritosTitle')}
+            </h3>
             <div className="flex-1 flex items-center justify-center">
-              <p className="text-sm font-light sm:w-3/4 text-center text-[#565656]">Você ainda não favoritou nenhuma ONG, que tal fazer isso agora?</p>
+              <p className="text-sm font-light sm:w-3/4 text-center text-[#565656]">
+                {t('doacoesFavoritosEmpty')}
+              </p>
             </div>
           </article>
          </section>
 
          <section>
-          <h1 className="text-2xl font-bold mt-6">Faça uma doação</h1>
-          <p className="text-lg mt-1">Escolha alguém para impactar</p>
+          <h1 className="text-2xl font-bold mt-6">
+            {t('doacoesFacaUma')}
+          </h1>
+          <p className="text-lg mt-1">
+            {t('doacoesFacaUmaText')}
+          </p>
 
           <div className="mt-4">
-            <h2 className="text-xl font-medium">Busque por causas:</h2>
+            <h2 className="text-xl font-medium">
+              {t('doacoesCausas')}
+            </h2>
 
             <div className="w-full flex flex-wrap justify-between mt-1 mb-8 gap-y-4">
-              <Tag>Crianças</Tag>
-              <Tag>Animais</Tag>
-              <Tag>Combate à fome</Tag>
-              <Tag>Idosos</Tag>
-              <Tag>Situação de rua</Tag>
-              <Tag>Outros</Tag>
+              <Tag>{t('doacaoCausaCriança')}</Tag>
+              <Tag>{t('doacaoCausaAnimais')}</Tag>
+              <Tag>{t('doacaoCausaCombateFome')}</Tag>
+              <Tag>{t('doacaoCausaIdosos')}</Tag>
+              <Tag>{t('doacaoCausaSituacaoRua')}</Tag>
+              <Tag>{t('doacaoCausaOutros')}</Tag>
             </div>
           </div>
 
@@ -78,14 +99,11 @@ export function Doacoes(){
                 <Ong idOng={ong.id} image={ong.image} nome={ong.nome} sobreOng={ong.sobreOng} key={String(ong.id)} />
               ))
             }
-            {
-              ongs.map(ong => (
-                <Ong idOng={ong.id} image={ong.image} nome={ong.nome} sobreOng={ong.sobreOng} key={String(ong.id)} />
-              ))
-            }
           </ul>
             <div className="w-full flex items-center justify-center">
-              <button className="mt-5 text-xl hover:underline hover:underline-offset-2">Veja mais</button>
+              <button className="mt-5 text-xl hover:underline hover:underline-offset-2">
+                {t('vejaMais')}
+              </button>
             </div>
           
          </section>

@@ -2,6 +2,9 @@
     "translation": {
       "impacto": "Impacto",
       "slogan": "Unindo Causas, Transformando Vidas!",
+
+      "saibaMais": "Saiba mais",
+      "vejaMais": "Veja mais",
   
       "loginTitle": "Acesse a Plataforma",
       "loginFrase": "Faça login ou registre-se para começar a impactar vidas ainda hoje.",
@@ -78,6 +81,22 @@
       "sobrePorQueSlogan": "Esse é nosso slogan, que representa o que queremos trazer para o mundo, unir causas (ONGS e Doadores), transformando vidas(Ajudar quem estar ajudando)",
       "sobreNossosParceiros": "Nossos parceiros",
       "sobreNossosParceirosTexto": "Temos um profundo agradecimento aos nossos parceiros por se juntarem a nossa comunidade e conseguirem transformar vidas ao redor do mundo!",
-      "saibaMais": "Saiba mais"
+
+      "doacoesAcoesRapidas": "Atalhos rápidos",
+      "doacoesDoeParaTodos": "Doe para todos!",
+      "doacoesDoeAqui": "Doe aqui",
+      "doacoesDoeParaTodosText": "Não tem nenhuma ONG em específico para doar? Por aqui sua doação será distribuído igualmente para todas as ONG’s cadastradas!",
+      "doacooesDoeParaTodosImageAlt": "Imagem de uma pessoa branca, vestida com roupas sociais e sentada em uma cadeira que está segurando um coração azul",
+      "doacoesFavoritosTitle": "Meus favoritos",
+      "doacoesFavoritosEmpty": "Você ainda não favoritou nenhuma ONG, que tal fazer isso agora?",
+      "doacoesFacaUma": "Faça uma doação",
+      "doacoesFacaUmaText": "Escolha alguém para impactar",
+      "doacoesCausas": "Busque por causas",
+      "doacaoCausaCriança": "Crianças",
+      "doacaoCausaAnimais": "Animais",
+      "doacaoCausaCombateFome": "Combate à fome",
+      "doacaoCausaIdosos": "Idosos",
+      "doacaoCausaSituacaoRua": "Situação de rua",
+      "doacaoCausaOutros": "Outros"
     }
   }

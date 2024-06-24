@@ -3,6 +3,8 @@
     "impacto": "Impacto",
     "slogan": "¡Uniendo causas, Transformando vidas!",
 
+    "saibaMais": "Saber más",
+    "vejaMais": "Ver más",
 
     "loginTitle": "Accede a la Plataforma",
     "loginFrase": "Inicia sesión o regístrate para comenzar a impactar vidas hoy.",
@@ -40,7 +42,7 @@
     "destaquesCarousel2QuartaFrase": "Y Haz la Diferencia",
 
     "destaquesCarousel3PrimeiraFrase": "¡CUPONES QUE HACEN BIEN!",
-    "destaquesCarousel3SegundaFrase": "Dona y comienza a acumular puntos, gana boletos y cupones",
+    "destaquesCarousel3SegundaFrase": "Dona y empieza a acumular puntos, gana boletos y vales",
     "destaquesCarousel3TerceiraFrase": "Gana Puntos",
     "destaquesCarousel3QuartaFrase": "¡Y Ahorra!",
 
@@ -49,7 +51,7 @@
     "destaquesCarousel4TerceiraFrase": "y accede a oportunidades de colaboración.",
     "destaquesCarousel4QuartaFrase": "Únete a",
 
-    "destaquesCarousel5PrimeiraFrase": "¡SÍGUENOS Y MANTENTE INFORMADO!",
+    "destaquesCarousel5PrimeiraFrase": "¡SÍGUENOS Y MANTÉNTE ACTUALIZADO!",
     "destaquesCarousel5SegundaFrase": "Sigue a",
     "destaquesCarousel5TerceiraFrase": "en las redes sociales y sigue nuestras novedades y oportunidades para involucrarte.",
     "destaquesCarousel5QuartaFrase": "#UniendoCausasTransformandoVidas",
@@ -59,19 +61,19 @@
     "vagaIdeal": "TU PUESTO IDEAL",
     "tituloVaga": "Título del puesto",
     "informacoes": "Localización | Hora",
-    "requisitos": "Requisitos Necesarios:",
+    "requisitos": "Requisitos necesarios:",
     "requisitoa": "Requisito",
     "candidatar": "POSTULARME",
 
     "sobreSurgiuImpactoTitulo": "¿Cómo surgió Impacto?",
-    "sobreSurgiuImpacto": "Impacto surgió con 7 personas que se conocieron en el Instituto PROA, un lugar donde se ofrece un curso de programación. Este curso consiste en realizar un proyecto grupal llamado Demoday donde tienes que hacer una presentación del mismo. De esto surgió la idea de Impacto y vimos cuánto las ONGs e instituciones enfrentan muchas dificultades. Por lo tanto, lo que era un proyecto se convirtió en una Startup porque sabemos que podemos transformar vidas y contribuir a una sociedad mejor.",
+    "sobreSurgiuImpacto": "Impacto surgió con 7 personas que se conocieron en el Instituto PROA, un lugar donde se ofrece un curso de programación. Este curso consiste en realizar un proyecto grupal llamado Demoday donde tienes que hacer una presentación del mismo. De esto surgió la idea de Impacto y vimos cuánto las ONG e instituciones enfrentan muchas dificultades. Por lo tanto, lo que era un proyecto se convirtió en una Startup porque sabemos que podemos transformar vidas y contribuir a una sociedad mejor.",
     "sobreNossaMissaoTitulo": "Nuestra Misión",
     "sobreNossaMissao": "Nuestra misión es ser el puente entre el deseo de ayudar y la oportunidad de hacer la diferencia. En nuestra plataforma, unimos corazones generosos con causas transformadoras, ofreciendo una experiencia única que permite a las personas contribuir a un mundo mejor, ya sea a través de donaciones financieras o involucramiento voluntario.",
     "sobreNossaVisaoTitulo": "Nuestra Visión",
     "sobreNossaVisao": "Transformar el mundo en un lugar donde la generosidad es una fuerza poderosa y accesible para todos, capacitando a las personas para convertirse en agentes de cambio.",
     "sobreConhecaNossaEquipe": "¡Conoce al equipo de Impacto!",
     "sobreIdentidadeVisualTitulo": "Un poco sobre nuestra identidad",
-    "sobrePorQueImpactoTitulo": "¿Por qué",
+    "sobrePorQueImpactoTitulo": "¿Por qué Impacto?",
     "sobrePorQueImpacto": "Elegimos Impacto porque queremos causar un impacto en todo el mundo con nuestra plataforma, y también notamos que esta palabra se usa comúnmente cuando se habla de transformar vidas.",
     "sobrePorQuePonteTitulo": "¿Un puente?",
     "sobrePorQuePonte": "¡Sí! Nuestro logo simboliza un puente porque nuestra intención es ser el puente entre ONGs y donantes.",
@@ -79,6 +81,22 @@
     "sobrePorQueSlogan": "Este es nuestro eslogan, que representa lo que queremos traer al mundo, unir causas (ONGs y donantes), transformando vidas (ayudando a los que están ayudando).",
     "sobreNossosParceiros": "Nuestros Socios",
     "sobreNossosParceirosTexto": "Agradecemos profundamente a nuestros socios por unirse a nuestra comunidad y lograr transformar vidas en todo el mundo!",
-    "saibaMais": "Saber más"
+
+    "doacoesAcoesRapidas": "Atajos rápidos",
+    "doacoesDoeParaTodos": "¡Dona a todos!",
+    "doacoesDoeAqui": "Done aquí",
+    "doacoesDoeParaTodosText": "¿No tienes una ONG específica para donar? Aquí tu donación se distribuirá equitativamente entre todas las ONG registradas.",
+    "doacooesDoeParaTodosImageAlt": "Imagen de una persona blanca, vestida con ropa social y sentada en una silla que sostiene un corazón azul",
+    "doacoesFavoritosTitle": "Mis Favoritos",
+    "doacoesFavoritosEmpty": "Aún no has marcado ninguna ONG como favorita, ¿qué tal hacerlo ahora?",
+    "doacoesFacaUma": "Haz una Donación",
+    "doacoesFacaUmaText": "Elige a alguien para impactar",
+    "doacoesCausas": "Buscar por causas",
+    "doacaoCausaCriança": "Niños",
+    "doacaoCausaAnimais": "Animales",
+    "doacaoCausaCombateFome": "Lucha contra el hambre",
+    "doacaoCausaIdosos": "Ancianos",
+    "doacaoCausaSituacaoRua": "Vivienda",
+    "doacaoCausaOutros": "Otros"
   }
 }
