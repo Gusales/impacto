@@ -7,7 +7,7 @@ import Footer from "@/components/components-impacto/footer"
 import EquipeImpacto from '@/assets/images-impacto/equipe-impacto.jpeg'
 import Logo from '@/assets/images-impacto/Logo.svg'
 import Visao from '@/assets/images-sobrenos/nossa-visao.jpg'
-
+import Valores from '@/assets/images-sobrenos/nossos-valores.jpeg'
 import { Content } from "@/pages/Sobre/Components/content"
 import { Impactante } from "./Components/impactante"
 
@@ -107,6 +107,14 @@ export function Sobre() {
                     content={t('sobreNossaVisao')}
                     imgSrc={Visao}
                     imgAlt="Imagem de um mundo sendo segurado por mãos, que está passando por transformações"
+                />
+                
+                <Content
+                    content={t('sobreNossosValores')}
+                    title={t('sobreNossosValoresTitulo')}
+                    imgAlt="Imagem da Logo da nossa plataforma, uma ponte, simbolizando a conexão entre doadores e organizações não governamentais"
+                    imgSrc={Valores}
+                    imgPosition="left"
                 />
 
                 <section className="space-y-8 w-full mt-20">

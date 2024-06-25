@@ -7,6 +7,7 @@ import { Doar } from './pages/Doar/doar'
 import { createBrowserRouter } from 'react-router-dom'
 import { Sobre } from './pages/Sobre/sobre'
 import { Doacoes } from './pages/Doacoes/doacoes'
+import { Voluntariado } from './pages/Voluntariado/voluntariado'
 
 export const routers = createBrowserRouter([
   {
@@ -36,5 +37,9 @@ export const routers = createBrowserRouter([
   {
     path: 'doacoes',
     element: <Doacoes />
+  },
+  {
+    path: 'voluntario',
+    element: <Voluntariado />
   }
 ])

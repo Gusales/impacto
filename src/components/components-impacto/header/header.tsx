@@ -27,7 +27,8 @@ export function Header(){
           <NavLink to="/sobrenos" className="transition-all hover:underline hover:underline-offset-2">{t('headerSobreNos')}</NavLink>
           {/* <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerDoacao')}</a> */}
           <NavLink to="/doacoes" className="transition-all hover:underline hover:underline-offset-2">{t('headerDoacao')}</NavLink>
-          <a href="" className="transition-all hover:underline hover:underline-offset-2">{t('headerTrabalhoVoluntario')}</a>
+          <NavLink to="/voluntario" className="transition-all hover:underline hover:underline-offset-2">{t('headerTrabalhoVoluntario')}</NavLink>
+          
 
           <div className="flex gap-2 items-center cursor-pointer hover:underline">
             <img src={Login} alt="" className="h-[40px] w-[40px]" />
