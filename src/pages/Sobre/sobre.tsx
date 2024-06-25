@@ -84,7 +84,7 @@ export function Sobre() {
             <Header />
             <main className="w-4/5 mt-[40%] lg:mt-[175px] flex flex-col items-center gap-4 mb-10">
                 <div className="text-center border-b-4 border-[#004AAD] w-fit mb-12">
-                    <h1 className="text-3xl">{t('slogan')}</h1>
+                    <h1 className="text-3xl text-[#475459]">{t('slogan')}</h1>
                 </div>
 
                 <Content 
