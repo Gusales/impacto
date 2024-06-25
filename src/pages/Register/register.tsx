@@ -7,6 +7,7 @@ import Logo from '@/assets/images-impacto/Logo.svg'
 
 import { RegisterOngForm } from "./Components/register-ong-form";
 import { RegisterUserForm } from "./Components/register-user-form";
+import { ButtonImpacto } from "@/components/components-impacto/button";
 
 
 document.title = "Criar Conta || Impacto"
@@ -49,6 +50,11 @@ export function Register(){
         <p className="text-xl">
         Cria uma conta agora mesmo e {registerType === "ong" ? "seja impactada por " : "cause impacto em "} várias pessoas!
         </p>
+
+        <div className="grid grid-cols-2 gap-2 w-full sm:hidden">
+          <ButtonImpacto variant={registerType === 'ong' ? "primary" : "secondary"} onClick={handleChangeLogin}>Conta para ONG</ButtonImpacto>
+          <ButtonImpacto variant={registerType === 'user' ? "primary" : "secondary"} onClick={handleChangeLogin}>Conta para Doador</ButtonImpacto>
+        </div>
 
         {
           registerType === "user" ? <RegisterUserForm /> : <RegisterOngForm />
