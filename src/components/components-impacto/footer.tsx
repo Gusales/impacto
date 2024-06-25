@@ -6,13 +6,65 @@ import Linkedin from "@/assets/images-footer/iconLinkedin.svg";
 function Footer() {
     return (
         <>
-            <footer className="bottom-0 w-full bg-gradient-to-r from-[#DAF1FF] via-[#8CBAD9] to-[#4A829C] h-48">
-                <div className="flex items-center justify-center p-5">
-                    <a className="p-2" href="https://www.facebook.com/profile.php?id=61560001469951" target="_blank"><img src={ Facebook } alt="Icone do Facebook" /></a>
-                    <a className="p-2" href="https://www.instagram.com/impactoinspira?igsh=OWl4ZHc1dTV2NDd5" target="_blank"><img src={ Instagram } alt="Icone do Instagram" /></a>
-                    <a className="p-2" href="https://www.linkedin.com/company/impactoinspira/" target="_blank"><img src={ Linkedin } alt="Icone do Linkedin" /></a>
+            <footer className="bottom-0 w-full bg-[#B7D5E5] flex flex-col items-center">
+                <section className="flex justify-around items-center p-4">
+                    <div className="flex flex-row w-full space-x-60">
+                        <div className="flex flex-col items-center space-y-4 flex-1">
+                            <ul className="text-[18px] text-[#262E30] font-[500] ">
+                                <li className="p-2">
+                                    <h3 className="text-2xl font-medium text-[#004358] pb-5">Impacto</h3>
+                                </li>
+                                <li className="p-2">
+                                    <a href="#">Sobre Nós</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col items-center space-y-4 flex-1">
+                            <ul className="text-[18px] text-[#262E30] font-[500] ">
+                                <li className="p-2">
+                                    <h3 className="text-2xl font-medium text-[#004358] pb-5">Doação</h3>
+                                </li>
+                                <li className="p-2">
+                                    <a href="#">Importância da doação</a>
+                                </li>
+                                <li className="p-2">
+                                    <a href="#">Benefícios da doação</a>
+                                </li>
+                                <li className="p-2">
+                                    <a href="#">ONG's cadastradas</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col items-center space-y-4 flex-1">
+                            <ul className="text-[18px] text-[#262E30] font-[500] ">
+                                <li className="p-2">
+                                    <h3 className="text-2xl font-medium text-[#004358] pb-5">ONG</h3>
+                                </li>
+                                <li className="p-2">
+                                    <a href="#">Cadastrar minha ONG</a>
+                                </li>
+                                <li className="p-2">
+                                    <a href="#">Benefícios oferecidos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div className="flex flex-row items-center mt-10 font-medium pb-6">
+                    <h4>Siga a Impacto nas redes! -</h4>
+                    <a className="p-2" href="https://www.facebook.com/profile.php?id=61560001469951" target="_blank" rel="noopener noreferrer">
+                        <img src={Facebook} alt="Ícone do Facebook" className="h-8 w-8" />
+                    </a>
+                    <a className="p-2" href="https://www.instagram.com/impactoinspira?igsh=OWl4ZHc1dTV2NDd5" target="_blank" rel="noopener noreferrer">
+                        <img src={Instagram} alt="Ícone do Instagram" className="h-8 w-8" />
+                    </a>
+                    <a className="p-2" href="https://www.linkedin.com/company/impactoinspira/" target="_blank" rel="noopener noreferrer">
+                        <img src={Linkedin} alt="Ícone do Linkedin" className="h-8 w-8" />
+                    </a>
                 </div>
-                    <p className='text-center m-auto p-5 text-lg text-[#004358] font-medium'>© 2024 Impacto</p>
+                <p className="text-center pt-2 text-lg text-[#004358] font-medium pb-6">
+                    © 2024 Impacto
+                </p>
             </footer>
         </>
     )
