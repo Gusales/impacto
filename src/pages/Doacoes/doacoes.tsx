@@ -1,6 +1,3 @@
-import Footer from "@/components/components-impacto/footer";
-import { Header } from "@/components/components-impacto/header/header";
-
 import DoeParaTodos from '@/assets/imagens-doacoes/doe_para_todos.png'
 
 import PulseMais from '../Sobre/assets/images/parceiros/pulse_mais.jpg'
@@ -30,8 +27,7 @@ export function Doacoes(){
   const { t } = useTranslation()
   
   return(
-    <div className="absolute inset-0 flex flex-col items-center">
-      <Header />
+    <div className="flex flex-col items-center">
       <main className="w-4/5 mt-[175px] pb-8">
          <h2 className="text-2xl font-medium">
           {t('doacoesAcoesRapidas')}
@@ -108,7 +104,6 @@ export function Doacoes(){
           
          </section>
       </main>
-      <Footer />
     </div>
   )
 }

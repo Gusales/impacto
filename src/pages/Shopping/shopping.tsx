@@ -1,7 +1,4 @@
-import { Header } from "@/components/components-impacto/header/header";
-
 import { ChevronRight } from "lucide-react";
-import Footer from "@/components/components-impacto/footer";
 import { Recompensa } from "@/pages/Shopping/Components/recompensa";
 import { Hero } from "./Components/hero";
 
@@ -9,8 +6,7 @@ export function ShoppingPage(){
   document.title = "Resgate seus pontos || Impacto"
 
   return (
-    <div className="absolute inset-0 flex flex-col items-center">
-      <Header />
+    <div className="flex flex-col items-center">
       <div className="mt-[50%] w-[80%] mb-6 sm:mt-[12%]">
         <h1 className="text-2xl font-semibold">
           Já fez uma doação hoje?
@@ -48,7 +44,6 @@ export function ShoppingPage(){
           </section>
         </section>
       </div>
-      <Footer />
     </div>
   )
 }

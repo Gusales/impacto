@@ -1,15 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import { RouterProvider } from 'react-router-dom'
-
 import './lib/i18n'
 import './index.css'
 
-import { routers } from './routes'
+import { Router } from './Router'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={routers} />
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   </React.StrictMode>,
 )

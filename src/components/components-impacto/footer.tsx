@@ -1,12 +1,13 @@
 import Facebook from "@/assets/images-footer/facebook.svg";
 import Instagram from "@/assets/images-footer/inconInstagram.svg";
 import Linkedin from "@/assets/images-footer/iconLinkedin.svg";
+import { NavLink } from "react-router-dom";
 
 
 function Footer() {
     return (
         <>
-            <footer className="bottom-0 w-full bg-[#B7D5E5] flex flex-col items-center">
+            <footer className="w-full bg-[#B7D5E5] flex flex-col items-center">
                 <section className="flex justify-around items-center p-4">
                     <div className="flex flex-row w-full space-x-60">
                         <div className="flex flex-col items-center space-y-4 flex-1">
@@ -15,7 +16,8 @@ function Footer() {
                                     <h3 className="text-2xl font-medium text-[#004358] pb-5">Impacto</h3>
                                 </li>
                                 <li className="p-2">
-                                    <a href="#">Sobre Nós</a>
+                                    {/* <a href="#">Sobre Nós</a> */}
+                                    <NavLink to="/sobrenos#sobre"></NavLink>
                                 </li>
                             </ul>
                         </div>

@@ -1,18 +1,14 @@
 import { Instagram, Linkedin } from 'lucide-react'
 
-import { Header } from "@/components/components-impacto/header/header";
-
 import BridgeLogo from '@/assets/images-impacto/bridge-logo.svg'
 
 import Banner from '@/assets/images-placeholder/CapaOng.jpg'
 import Logo from '@/assets/images-placeholder/logo.jpg'
 import ImagePlaceholder from '@/assets/images-placeholder/Image-Vaga.jpg'
-import Footer from "@/components/components-impacto/footer";
 
 export function Doar(){
   return(
-    <div className="absolute inset-0 flex flex-col items-center">
-      <Header />
+    <div className="flex flex-col items-center">
       <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">
         <div className="flex gap-8 items-center font-medium text-3xl mb-10 text-[#004358]">  
           <img src={BridgeLogo} alt="Imagem da logo da impacto" className="h-10" />
@@ -81,8 +77,6 @@ export function Doar(){
           </section>
         </section>
       </div>
-      <Footer />
-
     </div>
   )
 }
