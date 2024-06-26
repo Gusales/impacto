@@ -79,7 +79,7 @@ export function Sobre() {
     document.title = "Sobre nós da Impacto"
     return(
         <div className={`${styles.bgImage} bg-no-repeat bg-cover flex flex-col items-center`}>
-            <main id="sobre" className="w-4/5 flex flex-col items-center gap-4 mb-10">
+            <main className="w-4/5 flex flex-col items-center gap-4 mb-10">
                 <div className="text-center border-b-4 border-[#004AAD] w-fit mb-12">
                     <h1 className="text-3xl text-[#475459]">{t('slogan')}</h1>
                 </div>
