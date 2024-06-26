@@ -8,6 +8,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { Sobre } from './pages/Sobre/sobre'
 import { Doacoes } from './pages/Doacoes/doacoes'
 import { Voluntariado } from './pages/Voluntariado/voluntariado'
+import { PerfilOng } from './pages/PerfilOng/perfil'
 
 export const routers = createBrowserRouter([
   {
@@ -41,5 +42,11 @@ export const routers = createBrowserRouter([
   {
     path: 'voluntario',
     element: <Voluntariado />
+  },
+  {
+    path: 'perfilong',
+    element: <PerfilOng />
   }
+
+
 ])

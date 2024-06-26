@@ -1,3 +1,5 @@
+
+
 interface ContentProps{
     imgSrc: string
     imgAlt: string

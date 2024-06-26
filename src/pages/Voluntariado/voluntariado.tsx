@@ -49,7 +49,6 @@ export function Voluntariado(){
                 <Jobs />
                 <Jobs />
                 <Jobs />
-
             </div>
       </main>
       <Footer />
