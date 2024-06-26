@@ -7,6 +7,8 @@ import Logo from '@/assets/images-placeholder/logo.jpg'
 import ImagePlaceholder from '@/assets/images-placeholder/Image-Vaga.jpg'
 
 export function Doar(){
+  document.title = "Faça uma doação para !"
+
   return(
     <div className="flex flex-col items-center">
       <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">

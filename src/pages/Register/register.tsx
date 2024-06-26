@@ -10,7 +10,7 @@ import { RegisterUserForm } from "./Components/register-user-form";
 import { ButtonImpacto } from "@/components/components-impacto/button";
 
 
-document.title = "Criar Conta || Impacto"
+document.title = "Criar sua conta impactante"
 export function Register(){
   const [registerType, setRegisterType] = useState<'user' | 'ong'>('user')
   const { t } = useTranslation()

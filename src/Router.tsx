@@ -15,7 +15,7 @@ import { Rifa } from "./pages/Rifa/rifa";
 export function Router(){
   return(
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
+      <Route path="/" element={<DefaultLayout />} >
         <Route path="/" element={<Home />} />
         <Route path="/shopping" element={<ShoppingPage />} />
         <Route path="/doar" element={<Doar />} />

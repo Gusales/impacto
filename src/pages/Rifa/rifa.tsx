@@ -2,6 +2,7 @@ import { InputImpacto } from "@/components/components-impacto/input";
 import Ticket from "./assets/ticket.svg";
 
 export function Rifa() {
+    document.title = "Crie uma rifa"
 
     return (
         <div className=" mb-[20px] ">

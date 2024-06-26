@@ -10,6 +10,8 @@ import { Jobs } from "@/components/components-impacto/jobs"
 import { Tag } from "../Doacoes/components/tag";
 
 export function Voluntariado(){
+    document.title = "Vagas de Trabalho voluntário"
+
     return(
         <div className="flex flex-col items-center">
             <main className="w-4/5 mt-[175px] pb-8">
