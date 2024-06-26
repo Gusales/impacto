@@ -12,8 +12,7 @@ import Footer from "@/components/components-impacto/footer";
 
 export function PerfilOng() {
     return (
-      <div className="absolute inset-0 flex flex-col items-center">
-        <Header />
+      <div className="flex flex-col items-center">
         <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">
           <div className="flex gap-8 items-center font-medium text-3xl mb-10 text-[#004358]">
             <img
@@ -194,11 +193,8 @@ export function PerfilOng() {
             <h1 className="text-[#004358] text-[28px] mb-20">IMPULSIONE AS SUAS CAMPANHAS</h1>
             <h1 className="text-3xl font-bold text-[#004358] text-center">Plano premium</h1>
           </div>
-        </section>
-
-        
+        </section>        
       </div>
-      <Footer />
     </div>
   );
 }
