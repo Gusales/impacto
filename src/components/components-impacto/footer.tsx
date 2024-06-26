@@ -1,6 +1,7 @@
 import Facebook from "@/assets/images-footer/facebook.svg";
 import Instagram from "@/assets/images-footer/inconInstagram.svg";
 import Linkedin from "@/assets/images-footer/iconLinkedin.svg";
+import { NavLink } from "react-router-dom";
 
 
 function Footer() {
@@ -15,7 +16,8 @@ function Footer() {
                                     <h3 className="text-2xl font-medium text-[#004358] pb-5">Impacto</h3>
                                 </li>
                                 <li className="p-2">
-                                    <a href="#">Sobre Nós</a>
+                                    {/* <a href="#">Sobre Nós</a> */}
+                                    <NavLink to="/sobrenos#sobre"></NavLink>
                                 </li>
                             </ul>
                         </div>

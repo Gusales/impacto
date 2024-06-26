@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next"
 
-import { Header } from "@/components/components-impacto/header/header"
 import styles from './style.module.css'
-import Footer from "@/components/components-impacto/footer"
 
 import EquipeImpacto from '@/assets/images-impacto/equipe-impacto.jpeg'
 import Logo from '@/assets/images-impacto/Logo.svg'
@@ -81,8 +79,7 @@ export function Sobre() {
     document.title = "Sobre nós da Impacto"
     return(
         <div className={`${styles.bgImage} bg-no-repeat bg-cover flex flex-col items-center`}>
-            <Header />
-            <main className="w-4/5 mt-[40%] lg:mt-[175px] flex flex-col items-center gap-4 mb-10">
+            <main id="sobre" className="w-4/5 mt-[40%] lg:mt-[175px] flex flex-col items-center gap-4 mb-10">
                 <div className="text-center border-b-4 border-[#004AAD] w-fit mb-12">
                     <h1 className="text-3xl text-[#475459]">{t('slogan')}</h1>
                 </div>
@@ -196,8 +193,6 @@ export function Sobre() {
                   </div>
                 </section>
             </main>
-
-            <Footer />
         </div>
     )
 }
