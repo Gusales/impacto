@@ -7,7 +7,7 @@ export function ShoppingPage(){
 
   return (
     <div className="flex flex-col items-center">
-      <div className="mt-[50%] w-[80%] mb-6 sm:mt-[12%]">
+      <div className="w-[80%] mb-6">
         <h1 className="text-2xl font-semibold">
           Já fez uma doação hoje?
         </h1>

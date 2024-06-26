@@ -14,7 +14,7 @@ export function Voluntariado(){
 
     return(
         <div className="flex flex-col items-center">
-            <main className="w-4/5 mt-[175px] pb-8">
+            <main className="w-4/5 pb-8">
                     <div className="flex gap-20" >
                         <div className="flex flex-col items-center justify-center">
                             <img src={Criancas} alt="Icone de Crianças" />

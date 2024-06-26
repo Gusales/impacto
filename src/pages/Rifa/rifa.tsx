@@ -5,7 +5,7 @@ export function Rifa() {
     document.title = "Crie uma rifa"
 
     return (
-        <div className=" mb-[20px] ">
+        <div className="mb-[20px]">
 
             <div className="flex items-center gap-5 ml-[135px]">
 
