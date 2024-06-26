@@ -27,7 +27,7 @@ export function Doacoes(){
   const { t } = useTranslation()
   
   return(
-    <div className="absolute inset-0 flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <main className="w-4/5 mt-[175px] pb-8">
          <h2 className="text-2xl font-medium">
           {t('doacoesAcoesRapidas')}

@@ -4,9 +4,11 @@ import { Outlet } from "react-router-dom";
 
 export function DefaultLayout(){
   return(
-    <div className="absolute inset-0">
+    <div className="flex flex-col">
       <Header />
-      <Outlet />
+      <div className="flex-1">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )

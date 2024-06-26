@@ -11,7 +11,7 @@ import { Tag } from "../Doacoes/components/tag";
 
 export function Voluntariado(){
     return(
-        <div className="absolute inset-0 flex flex-col items-center">
+        <div className="flex flex-col items-center">
             <main className="w-4/5 mt-[175px] pb-8">
                     <div className="flex gap-20" >
                         <div className="flex flex-col items-center justify-center">
