@@ -1,5 +1,3 @@
-import { Header } from "@/components/components-impacto/header/header";
-
 import BridgeLogo from "@/assets/images-impacto/bridge-logo.svg";
 import DoacoesRealizadas from "@/assets/imagens-perfil-ong/doacoes-realizadas.png";
 import Repassados from "@/assets/imagens-perfil-ong/repassados.png";
@@ -8,7 +6,6 @@ import Pasta from "@/assets/imagens-perfil-ong/pasta.png";
 import Seta from "@/assets/imagens-perfil-ong/seta.png";
 import Banner from "@/assets/images-placeholder/CapaOng.jpg";
 import Logo from "@/assets/images-placeholder/logo.jpg";
-import Footer from "@/components/components-impacto/footer";
 
 export function PerfilOng() {
     return (
