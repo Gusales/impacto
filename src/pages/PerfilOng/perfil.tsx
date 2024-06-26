@@ -8,9 +8,10 @@ import Banner from "@/assets/images-placeholder/CapaOng.jpg";
 import Logo from "@/assets/images-placeholder/logo.jpg";
 
 export function PerfilOng() {
+  document.title = "Painel de administração"
     return (
       <div className="flex flex-col items-center">
-        <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">
+        <div className="max-w-[80vw] mb-10">
           <div className="flex gap-8 items-center font-medium text-3xl mb-10 text-[#004358]">
             <img
               src={BridgeLogo}
