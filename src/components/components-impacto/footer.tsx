@@ -16,7 +16,8 @@ function Footer() {
                                     <h3 className="text-2xl font-medium text-[#004358] pb-5">Impacto</h3>
                                 </li>
                                 <li className="p-2">
-                                    <NavLink to="/sobrenos">Sobre nós</NavLink>
+                                    {/* <a href="#">Sobre Nós</a> */}
+                                    <NavLink to="/sobrenos#sobre">Sobre Nós</NavLink>
                                 </li>
                             </ul>
                         </div>

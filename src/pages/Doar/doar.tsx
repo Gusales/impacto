@@ -8,11 +8,9 @@ import ImagePlaceholder from '@/assets/images-placeholder/Image-Vaga.jpg'
 import { DialogDoacao } from './components/dialog-doacao'
 
 export function Doar(){
-  document.title = "Faça uma doação para !"
-
   return(
     <div className="flex flex-col items-center">
-      <div className="max-w-[80vw] mb-10">
+      <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">
         <div className="flex gap-8 items-center font-medium text-3xl mb-10 text-[#004358]">  
           <img src={BridgeLogo} alt="Imagem da logo da impacto" className="h-10" />
           <p>Olá, bem vind@ de volta</p>
@@ -28,9 +26,9 @@ export function Doar(){
           <h2 className="text-2xl font-medium mb-6">Pulse Mais</h2>
           <p className="text-xl mb-6">Nossa missão é ajudar jovens com vulnerabilidade social, promovendo o  encontro do amor, solidariedade e do trabalho.</p>
           <div className="flex items-center gap-2 text-sm leading-relaxed">
-            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Jovens</span>
-            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Educação</span>
-            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Tecnologia</span>
+            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Crianças</span>
+            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Combate à fome</span>
+            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Situação de rua</span>
           </div>
         </section>
 

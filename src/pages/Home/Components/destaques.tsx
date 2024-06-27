@@ -25,7 +25,7 @@ function Destaques() {
 
     return (
         <>
-            <Carousel className="relative w-full mx-auto overflow-hidden shadow-[0px_4px_10px_0px_#807e7e] -mt-[175px]"
+            <Carousel className="relative w-full mx-auto overflow-hidden shadow-[0px_4px_10px_0px_#807e7e]"
             plugins={[
                 Autoplay({
                     delay: 4000,
@@ -35,7 +35,7 @@ function Destaques() {
                 <CarouselContent className="flex transition-transform">
                     <CarouselItem className="min-w-full flex-shrink-0">
                         <div className="flex items-center justify-between h-screen bg-gradient-to-b from-[#DAF1FF] to-[#7BB0C1] p-5 text-black">
-                            <div className="text-center">
+                            <div className="text-center mt-20 p-10">
 
                                 <img src={Ponte} alt="Logo da Impacto" title="Impacto" className="mx-auto" />
                                 <p className="text-[24px] font-semibold leading-[35px] text-[#004358]">{t('destaquesCarousel1PrimeiraFrase')}</p>
