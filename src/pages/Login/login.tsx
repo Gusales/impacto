@@ -10,7 +10,7 @@ import Bridge from '@/assets/images-impacto/bridge-logo.svg'
 import styles from './style.module.css'
 
 export function Login(){
-  document.title = "Login"
+  document.title = "Login || Impacto"
   const [loginType, setLoginType] = useState<'user' | 'ong'>('user')
   const { t } = useTranslation()
 

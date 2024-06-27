@@ -17,7 +17,7 @@ function Footer() {
                                 </li>
                                 <li className="p-2">
                                     {/* <a href="#">Sobre Nós</a> */}
-                                    <NavLink to="/sobrenos#sobre"></NavLink>
+                                    <NavLink to="/sobrenos#sobre">Sobre Nós</NavLink>
                                 </li>
                             </ul>
                         </div>

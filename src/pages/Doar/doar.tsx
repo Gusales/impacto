@@ -5,10 +5,9 @@ import BridgeLogo from '@/assets/images-impacto/bridge-logo.svg'
 import Banner from '@/assets/images-placeholder/CapaOng.jpg'
 import Logo from '@/assets/images-placeholder/logo.jpg'
 import ImagePlaceholder from '@/assets/images-placeholder/Image-Vaga.jpg'
+import { DialogDoacao } from './components/dialog-doacao'
 
 export function Doar(){
-  document.title = "Faça uma doação para !"
-
   return(
     <div className="flex flex-col items-center">
       <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">
@@ -27,9 +26,9 @@ export function Doar(){
           <h2 className="text-2xl font-medium mb-6">Pulse Mais</h2>
           <p className="text-xl mb-6">Nossa missão é ajudar jovens com vulnerabilidade social, promovendo o  encontro do amor, solidariedade e do trabalho.</p>
           <div className="flex items-center gap-2 text-sm leading-relaxed">
-            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Jovens</span>
-            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Educação</span>
-            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Tecnologia</span>
+            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Crianças</span>
+            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Combate à fome</span>
+            <span className="bg-[#1e4d8c] p-1 px-4 cursor-pointer hover:opacity-80 min-w-[100px] text-zinc-50 text-center rounded-full">#Situação de rua</span>
           </div>
         </section>
 
@@ -50,7 +49,8 @@ export function Doar(){
               <p>Por favor, confirme a baixo que você fará a doação via PIX. </p>
               <p>Essa confirmação é muito importante para identificarmos a sua doação!</p>
             </div>
-            <button className="bg-[#004AAD] w-[200px] text-zinc-50 text-xl px-5 py-1 font-semibold rounded hover:opacity-80 transition-all text-center">Doar</button>
+
+            <DialogDoacao />
           </section>
 
           <section className="flex flex-col gap-5 items-end text-[#15406B]">

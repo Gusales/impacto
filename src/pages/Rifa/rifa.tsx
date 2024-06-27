@@ -1,8 +1,9 @@
 import { InputImpacto } from "@/components/components-impacto/input";
 import Ticket from "./assets/ticket.svg";
+import { ButtonImpacto } from "@/components/components-impacto/button";
+import Arrow from "./assets/arrow.svg";
 
 export function Rifa() {
-    document.title = "Crie uma rifa"
 
     return (
         <div className=" mb-[20px] ">
@@ -11,7 +12,7 @@ export function Rifa() {
 
                 <figure>
 
-                    <img className="" src={Ticket} alt="" />
+                    <img src={Ticket} alt="" />
 
                 </figure>
 
@@ -58,7 +59,7 @@ export function Rifa() {
                                 <p className="text-[#004358] font-medium">R$</p>
                             </div>
 
-                            <InputImpacto className="flex-1 rounded-r-[10px]" placeholder="Telefone / WhatsApp" type="tel" />
+                            <InputImpacto className="flex-1 rounded-r-[10px]" placeholder="0,00" type="tel" />
 
                         </div>
 
@@ -86,6 +87,62 @@ export function Rifa() {
                 </form>
 
             </div>
+
+            <div className="mt-[41px] mb-[38px] ml-[100px]">
+
+                <hr className="text-[#004358] w-[1080px] shadow-[0px_4px_4px_0px_rgba(0, 0, 0, 0.25)]"/>
+
+            </div>
+
+            <div className="ml-[550px]">
+
+            <p className="text-[#004358] font-normal">TAXAS DE PUBLICAÇÃO</p>
+
+            </div>
+
+            <div className="flex justify-between ml-[100px] mr-[160px] mb-[23px]">
+
+                <div>
+
+                    <p>Taxa de publicação</p>
+
+                </div>
+
+                <div>
+
+                    <p className="text-[#F35454]">- R$ 5,00</p>
+                    
+                </div>
+
+            </div>
+
+            <div className="flex justify-between ml-[100px] mr-[160px]">
+
+                <div>
+
+                    <p>Arrecadação estimada</p>
+
+                </div>
+
+                <div>
+
+                    <p className="text-[#21BB1E]">+ R$ 0,00</p>
+                    
+                </div>
+
+            </div>
+
+            <ButtonImpacto className="ml-[100px] mt-[55px] mb-[53.73px]">
+                
+                <p className="ml-[88.33px]" >Prosseguir</p>
+
+                <figure>
+
+                    <img className="ml-[32.67px] mr-[28.33px]" src={Arrow} alt="" />
+
+                </figure>
+
+            </ButtonImpacto>
 
         </div>
     )
