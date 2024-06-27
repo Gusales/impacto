@@ -28,7 +28,7 @@ export function Doacoes(){
   
   return(
     <div className="flex flex-col items-center">
-      <main className="w-4/5 pb-8">
+      <main className="w-4/5 mt-[175px] pb-8">
          <h2 className="text-2xl font-medium">
           {t('doacoesAcoesRapidas')}
          </h2>
