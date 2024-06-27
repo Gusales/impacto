@@ -1,4 +1,7 @@
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
+import Proa from "../assets/instituto-proa.jpg";
+import MissaoVida from "../assets/missao-vida.png";
+import PulseMais from "../assets/pulse-mais.jpg";
 
 
 function HomeContent() {
@@ -12,10 +15,10 @@ function HomeContent() {
                         <p className="font-[#313131] text-[18px] ml-5">{t('conhecaOng')}</p>
 
 
-                        <div className="flex m-5 mb-28 justify-between">
-                            <a href="#"><img className="rounded-xl quadrado" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
-                            <a href="#"><img className="rounded-xl quadrado" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
-                            <a href="#"><img className="rounded-xl quadrado" src="https://via.placeholder.com/350" alt="Logo da ONG" /></a>
+                        <div className="flex m-5 mb-28 mt-[72px] justify-between">
+                            <a href="#"><img className="w-[350px] h-[350px] rounded-[30px]" src={ Proa } alt="Logo da ONG" /></a>
+                            <a href="#"><img className="w-[350px] h-[350px] rounded-[30px]" src={ MissaoVida } alt="Logo da ONG" /></a>
+                            <a href="#"><img className="w-[350px] h-[350px] rounded-[30px]" src={ PulseMais } alt="Logo da ONG" /></a>
                         </div>
                     </div>
 
@@ -30,7 +33,7 @@ function HomeContent() {
                                         <h2 className="text-[28px] font-semibold mr-14">{t('tituloVaga')}</h2>
                                         <p className="text-base text-[18px] mb-2">{t('informacoes')}</p>
                                     </div>
-                                    <img src="https://via.placeholder.com/75" alt="Logo da ONG" className="object-cover rounded-[10px]" />
+                                    <img src={ Proa } alt="Logo da ONG" className="object-cover rounded-[10px] w-[75px] h-[75px]" />
                                 </div>
                             </div>
 
@@ -52,7 +55,7 @@ function HomeContent() {
                                         <h2 className="text-[28px] font-semibold mr-14">{t('tituloVaga')}</h2>
                                         <p className="text-base text-[18px] mb-2">{t('informacoes')}</p>
                                     </div>
-                                    <img src="https://via.placeholder.com/75" alt="Logo da ONG" className="object-cover rounded-[10px]" />
+                                    <img src={ MissaoVida } alt="Logo da ONG" className="object-cover rounded-[10px] w-[75px] h-[75px]" />
                                 </div>
                             </div>
 
@@ -74,7 +77,7 @@ function HomeContent() {
                                         <h2 className="text-[28px] font-semibold mr-14">{t('tituloVaga')}</h2>
                                         <p className="text-base text-[18px] mb-2">{t('informacoes')}</p>
                                     </div>
-                                    <img src="https://via.placeholder.com/75" alt="Logo da ONG" className="object-cover rounded-[10px]" />
+                                    <img src={ PulseMais } alt="Logo da ONG" className="object-cover rounded-[10px] w-[75px] h-[75px]" />
                                 </div>
                             </div>
 
