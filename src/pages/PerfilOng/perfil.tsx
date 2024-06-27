@@ -9,33 +9,7 @@ import Banner from "@/assets/images-placeholder/CapaOng.jpg";
 import Logo from "@/assets/images-placeholder/logo.jpg";
 
 export function PerfilOng() {
-<<<<<<< HEAD
-  return (
-    <div className="absolute inset-0 flex flex-col items-center">
-      <Header />
-      <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">
-        <div className="flex gap-8 items-center font-medium text-3xl mb-10 text-[#004358]">
-          <img
-            src={BridgeLogo}
-            alt="Imagem da logo da impacto"
-            className="h-10"
-          />
-          <p>Olá, bem vind@ de volta</p>
-        </div>
 
-        <section className="relative">
-          <img
-            src={Banner}
-            alt="Capa da ONG"
-            className="rounded-t-full w-full md:h-80 object-cover"
-          />
-          <img
-            src={Logo}
-            alt="Logo da ONG"
-            className="rounded-full h-24 md:h-[210px] absolute -bottom left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden hover:scale-105 transition-all"
-          />
-        </section>
-=======
   document.title = "Painel de administração"
     return (
       <div className="flex flex-col items-center">
@@ -61,7 +35,6 @@ export function PerfilOng() {
               className="rounded-full h-24 md:h-[210px] absolute -bottom left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden hover:scale-105 transition-all"
             />
           </section>
->>>>>>> a2ef9b21f2e0100e11680cb20a40bd2a75057cc2
 
         <section className="mt-14  pb-5">
           <p className="text-lg mb-24">Resultados gerais:</p>
@@ -275,11 +248,9 @@ export function PerfilOng() {
               <h1 className="text-xl">por mês</h1>
             </button>
           </div>
-<<<<<<< HEAD
-        </section>
-=======
+
         </section>        
->>>>>>> a2ef9b21f2e0100e11680cb20a40bd2a75057cc2
+
       </div>
     </div>
   );
