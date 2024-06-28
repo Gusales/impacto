@@ -9,7 +9,7 @@ import {
 import { QrCode } from "./qr-code"
 import { Label } from "@/components/shadcnUI/label"
 import { InputImpacto } from "@/components/components-impacto/input"
-import { FormEvent, useEffect, useState } from "react"
+import { FormEvent, useState } from "react"
 import { ButtonImpacto } from "@/components/components-impacto/button"
 
 
@@ -17,8 +17,6 @@ export function DialogDoacao(){
   const [value, setValue] = useState(0.00)
   const [showQrCode, setShowQrCode] = useState(false)
   const [url, setUrl] = useState('')
-
-  // useEffect(() => {}, [showQrCode])
 
   async function handleGenerateQrCode(event: FormEvent<HTMLFormElement>){
     event.preventDefault()
