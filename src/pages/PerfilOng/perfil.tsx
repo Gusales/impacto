@@ -4,10 +4,12 @@ import Repassados from "@/assets/imagens-perfil-ong/repassados.png";
 import Candidatos from "@/assets/imagens-perfil-ong/candidatos.png";
 import Pasta from "@/assets/imagens-perfil-ong/pasta.png";
 import Seta from "@/assets/imagens-perfil-ong/seta.png";
+import Verificacao from "@/assets/imagens-perfil-ong/verificacao.png";
 import Banner from "@/assets/images-placeholder/CapaOng.jpg";
 import Logo from "@/assets/images-placeholder/logo.jpg";
 
 export function PerfilOng() {
+
   document.title = "Painel de administração"
     return (
       <div className="flex flex-col items-center">
@@ -93,9 +95,7 @@ export function PerfilOng() {
           </div>
           <div className="w-full grid place-content-center">
             <div className="bg-[#D2EEFF] rounded-full items-center  w-[548px]">
-              <h1 className="text-2xl text-[#004358] text-center">
-                Mentor
-              </h1>
+              <h1 className="text-2xl text-[#004358] text-center">Mentor</h1>
             </div>
           </div>
           <div className="flex justify-center gap-[70px] mt-7">
@@ -166,7 +166,9 @@ export function PerfilOng() {
               <h1 className="text-base text-[#3d3c3c] text-center">45 anos</h1>
             </div>
             <div className="rounded-full w-[102px]">
-              <h1 className="text-base text-[#3d3c3c] text-center">Front end</h1>
+              <h1 className="text-base text-[#3d3c3c] text-center">
+                Front end
+              </h1>
             </div>
           </div>
 
@@ -178,20 +180,77 @@ export function PerfilOng() {
               <h1 className="text-base text-[#3d3c3c] text-center">31 anos</h1>
             </div>
             <div className="rounded-full w-[102px]">
-              <h1 className="text-base text-[#3d3c3c] text-center">Full Stack</h1>
+              <h1 className="text-base text-[#3d3c3c] text-center">
+                Full Stack
+              </h1>
             </div>
           </div>
 
           <div className="flex mt-20 justify-end mb-9 border-b border-b-[#373F42] pb-9">
-            <h1 className="text-base text-[#000] font-bold text-right">Mais informações de trabalho voluntário: </h1>
+            <h1 className="text-base text-[#000] font-bold text-right">
+              Mais informações de trabalho voluntário:{" "}
+            </h1>
             <img className="size-7 ml-2" src={Seta} alt="Icone de Seta" />
           </div>
 
           <div>
-            <h1 className="text-[#004358] text-[28px] mb-20">IMPULSIONE AS SUAS CAMPANHAS</h1>
-            <h1 className="text-3xl font-bold text-[#004358] text-center">Plano premium</h1>
+            <h1 className="text-[#004358] text-[28px] mb-20">
+              IMPULSIONE AS SUAS CAMPANHAS
+            </h1>
+            <h1 className="text-3xl font-bold text-[#004358] text-center">
+              Plano premium
+            </h1>
           </div>
+
+          <div className="bg-[#D2EEFF] mt-20 grid grid-cols-2 gap-y-16 p-14">
+            <div className="flex items-center mr-20 gap-5">
+              <img src={Verificacao} alt="Icone de Verificação Azul" />
+              <h1 className="text-2xl font-medium">
+                Sem taxas e uso ilimitado das rifas
+              </h1>
+            </div>
+            <div className="flex items-center gap-5">
+              <img src={Verificacao} alt="Icone de Verificação Azul" />
+              <h1 className="text-2xl font-medium">
+                Curso de gestão financeira
+              </h1>
+            </div>
+
+            <div className="flex items-center mr-20 gap-5">
+              <img src={Verificacao} alt="Icone de Verificação Azul" />
+              <h1 className="text-2xl font-medium">Plataforma sem anúncios</h1>
+            </div>
+            <div className="flex items-center gap-5">
+              <img src={Verificacao} alt="Icone de Verificação Azul" />
+              <h1 className="text-2xl font-medium">
+                Acessos a quantos usuários entraram no seu perfil
+              </h1>
+            </div>
+            <div className="flex items-center mr-20 gap-5">
+              <img src={Verificacao} alt="Icone de Verificação Azul" />
+              <h1 className="text-2xl font-medium">
+                Ser ONG destaque na nossa plataforma
+              </h1>
+            </div>
+          </div>
+          
+          <div className="flex text-items-center gap-64 mt-16 justify-center">
+            <button className="text-5xl">
+             <h1 className="mb-6 text-3xl">Plano mensal</h1>
+              29⁹⁹
+              <br />
+              <h1 className="text-xl">por mês</h1>
+            </button>
+            <button className="text-5xl">
+              <h1 className="mb-6 text-3xl">Plano anual</h1>
+              21⁹⁹
+              <br />
+              <h1 className="text-xl">por mês</h1>
+            </button>
+          </div>
+
         </section>        
+
       </div>
     </div>
   );

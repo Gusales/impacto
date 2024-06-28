@@ -13,8 +13,8 @@ import { Voluntariado } from "./pages/Voluntariado/voluntariado";
 import { Rifa } from "./pages/Rifa/rifa";
 import { PerfilOng } from "./pages/PerfilOng/perfil";
 
-export function Router() {
-  return (
+export function Router(){
+  return(
     <Routes>
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
