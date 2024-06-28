@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { ChevronRight } from "lucide-react";
 import { Recompensa } from "@/pages/Shopping/Components/recompensa";
 import { Hero } from "./Components/hero";
@@ -6,29 +7,24 @@ import PlaceholderXbox from '@/assets/images-shopping/placeholder-card-example.p
 import PlaceholderIfood from '@/assets/images-shopping/placegolder-ifood.png'
 import PlaceholderMcDonalds from '@/assets/images-shopping/mcdonalds-brazil.webp'
 
-const vounchers = [
-  {
-    id: 1,
-    image: PlaceholderXbox,
-    nome: "Cartão Presente XBOX R$ 25,00",
-    price: 25000
-  },
-  {
-    id: 2,
-    image: PlaceholderIfood,
-    nome: "Cupom Desconto iFood R$ 20,00",
-    price: 20000
-  },
-  {
-    id: 3,
-    image: PlaceholderMcDonalds,
-    nome: "Cupom Desconto McDonald's R$ 25,00",
-    price: 25000
-  },
-]
+interface Vounchers {
+    id: number,
+    nome: string,
+    descricao: string,
+    codigo: string,
+    foiComprado: boolean,
+    pontos: number
+}
 
 export function ShoppingPage(){
   document.title = "Resgate seus pontos || Impacto"
+  const [vounchers, setVounchers] = useState<Vounchers[] | []>([])
+
+  useEffect(() => {
+    fetch('http://localhost:8085/').then(response => response.json()).then(data => {
+      setVounchers(data.vounchers)
+    })
+  },[])
 
   return (
     <div className="flex flex-col items-center">
@@ -64,9 +60,13 @@ export function ShoppingPage(){
 
           <section className="flex justify-between items-center gap-6 w-full flex-wrap">
             {
-              vounchers.map(item => (
-                <Recompensa image={item.image} nome={item.nome} price={item.price} />
-              ))
+              vounchers.length > 0 && (
+                <>
+                  <Recompensa image={PlaceholderXbox} nome={vounchers[7].nome} price={vounchers[7].pontos} />
+                  <Recompensa image={PlaceholderMcDonalds} nome={vounchers[6].nome} price={vounchers[6].pontos} />
+                  <Recompensa image={PlaceholderIfood} nome={vounchers[11].nome} price={vounchers[11].pontos} />
+                </>
+              )
             }
           </section>
         </section>
