@@ -31,10 +31,10 @@ export function Register(){
 
         <div className="w-full flex flex-col items-end mt-20 gap-2">
           <button className={`p-5 w-[175px] ${registerType === 'user' && "bg-white font-bold text-black" || "text-white font-bold"} rounded-l-full`} onClick={handleChangeLogin}>
-            {t('loginButtonUser')}
+            Cadastro doador
           </button>
           <button className={`p-5 w-[175px] ${registerType === 'ong' && "bg-white font-bold text-black" || "text-white font-medium"} rounded-l-full`} onClick={handleChangeLogin}>
-          {t('loginButtonONG')}
+            Cadastro ONG
           </button>
         </div>
 

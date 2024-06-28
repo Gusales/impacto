@@ -7,7 +7,7 @@ interface StepsProps {
 
 export function Steps({ step, etapas }: StepsProps){
   return (
-    <div className="w-full flex items-center justify-between mb-6 text-xs sm:text-base flex-wrap gap-2">
+    <div className="w-full flex items-center mb-6 text-xs sm:text-base flex-wrap gap-6">
       {
         etapas.map((item, index) => (
           <>
@@ -28,7 +28,7 @@ export function Step({count, isCheck = false, isActive = false, text}: {count: n
             isCheck ? <Check width={20} height={20} /> : count
           }
         </span>
-        <p className={`${isCheck || isActive ? "text-black font-semibold" : "text-[#8D8D99]"} ${isActive ? "hidden" : "block"}`}>{text}</p>
+        <p className={`${isCheck || isActive ? "text-black font-semibold" : "text-[#8D8D99]"} ${!isActive ? "hidden" : "block"}`}>{text}</p>
       </div>
   )
 }

@@ -2,12 +2,37 @@ import { ChevronRight } from "lucide-react";
 import { Recompensa } from "@/pages/Shopping/Components/recompensa";
 import { Hero } from "./Components/hero";
 
+import PlaceholderXbox from '@/assets/images-shopping/placeholder-card-example.png'
+import PlaceholderIfood from '@/assets/images-shopping/placegolder-ifood.png'
+import PlaceholderMcDonalds from '@/assets/images-shopping/mcdonalds-brazil.webp'
+
+const vounchers = [
+  {
+    id: 1,
+    image: PlaceholderXbox,
+    nome: "Cartão Presente XBOX R$ 25,00",
+    price: 25000
+  },
+  {
+    id: 2,
+    image: PlaceholderIfood,
+    nome: "Cupom Desconto iFood R$ 20,00",
+    price: 20000
+  },
+  {
+    id: 3,
+    image: PlaceholderMcDonalds,
+    nome: "Cupom Desconto McDonald's R$ 25,00",
+    price: 25000
+  },
+]
+
 export function ShoppingPage(){
   document.title = "Resgate seus pontos || Impacto"
 
   return (
     <div className="flex flex-col items-center">
-      <div className="mt-[50%] w-[80%] mb-6 sm:mt-[12%]">
+      <div className="w-[80%] mb-6">
         <h1 className="text-2xl font-semibold">
           Já fez uma doação hoje?
         </h1>
@@ -16,7 +41,7 @@ export function ShoppingPage(){
         </h2>
 
         <div className="flex flex-col items-center lg:grid grid-cols-2 lg:space-x-4">
-          <Hero buttonText="Confira" content="Aumete seus pontos fazendo doações e trabalhos voluntários!" title={`Olá${` Gustavo`}`} />
+          <Hero buttonText="Confira" content="Aumete seus pontos fazendo doações e trabalhos voluntários!" title={`Olá${``}`} />
           <Hero buttonText="Convidar" content="Convite um amigo para doar em qualquer ong e ganhe 10 pontos!" title="Convide e ganhe!" />
         </div>
       
@@ -38,9 +63,11 @@ export function ShoppingPage(){
           </div>
 
           <section className="flex justify-between items-center gap-6 w-full flex-wrap">
-            <Recompensa />
-            <Recompensa />
-            <Recompensa />
+            {
+              vounchers.map(item => (
+                <Recompensa image={item.image} nome={item.nome} price={item.price} />
+              ))
+            }
           </section>
         </section>
       </div>

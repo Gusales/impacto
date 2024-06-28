@@ -64,12 +64,12 @@ export function RegisterUserForm(){
       <section className={`${step === 1 ? "flex" : "hidden"} flex-col`}>
         <div className="space-y-4 mb-3">
           <Label htmlFor="email">E-mail:</Label>
-          <InputImpacto id="email" placeholder="Digite o e-mail da ONG" />
+          <InputImpacto id="email" placeholder="Digite seu e-mail" />
         </div>
 
         <div className="space-y-4 mb-3">
           <Label htmlFor="telefone">Telefone:</Label>
-          <InputImpacto id="telefone" placeholder="Digite o e-mail da ONG" />
+          <InputImpacto id="telefone" placeholder="Digite seu telefone" />
         </div>
       </section>
 

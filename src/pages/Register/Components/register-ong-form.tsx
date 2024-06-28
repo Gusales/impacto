@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { Upload } from 'lucide-react'
@@ -11,6 +11,7 @@ import { Textarea } from "@/components/shadcnUI/textarea";
 
 import { InputImpacto } from "@/components/components-impacto/input";
 import { ButtonImpacto } from "@/components/components-impacto/button";
+import { useToast } from "@/components/shadcnUI/use-toast";
 
 const etapas = ["informações", "sobre a ong", "contato", "senha"]
 
@@ -20,6 +21,7 @@ export function RegisterOngForm(){
   const [causa, setCausa] = useState('')
   const [senha, setSenha] = useState('')
   const [confirmaSenha, setConfirmaSenha] = useState('')
+  const { toast } = useToast()
 
   const asSenhasSaoAsMesmas = senha !== confirmaSenha
 
@@ -40,9 +42,23 @@ export function RegisterOngForm(){
     setCausas(state => state.filter(item => item !== causa))
   }
 
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    handleSumChangeStep()
+    console.log(step);
+    
+    if (step === 4) {
+      toast({
+        title: "Atenção!",
+        description: "Seu acesso será liberado assim que nossa analise de segurança for feita. Fique atento a sua caixa de e-mail",
+        variant: "destructive"
+      })
+    }
+  }
+
   return(
-    <form action="">
-      <Steps step={step} etapas={etapas} />
+    <form action="" onSubmit={handleSubmit}>
+      <Steps step={step < 4 ? step : 3} etapas={etapas} />
 
       {/* Passo 1 - Informações iniciais */}
       <div className={`${step === 0 ? "flex" : "hidden"} flex-col gap-2`}>
@@ -77,7 +93,7 @@ export function RegisterOngForm(){
 
         <div className="space-y-5 mt-4">
           <Label>Sobre</Label>
-          <Textarea className="h-[130px] resize-none bg-[#EDEDED]" placeholder="Fale sobre sua ONG, qual sua missão? Sua visão e seus valores?" required />
+          <Textarea className="h-[130px] resize-none bg-[#EDEDED]" placeholder="Fale sobre sua ONG, qual sua missão? Sua visão e seus valores?" />
         </div>
       </div>
 
@@ -112,7 +128,7 @@ export function RegisterOngForm(){
       </div>
 
       {/* Passo 4 - Senha */}
-      <div className={`${step === 3 ? "flex" : "hidden"} flex-col`}>
+      <div className={`${step >= 3 ? "flex" : "hidden"} flex-col`}>
         <div className="space-y-4 mb-3">
           <Label htmlFor="senha">Senha:</Label>
           <InputImpacto id="senha" placeholder="Digite sua senha" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
@@ -134,8 +150,8 @@ export function RegisterOngForm(){
             <ButtonImpacto type="button" variant="secondary" onClick={handleSubChangeStep}>Voltar</ButtonImpacto>
           </div>
           {
-            step === 3 ?
-            <ButtonImpacto type="submit">
+            step >= 3 ?
+            <ButtonImpacto type="submit" variant="secondary">
               Cadastrar
             </ButtonImpacto>
             : <ButtonImpacto type="button" onClick={handleSumChangeStep}>

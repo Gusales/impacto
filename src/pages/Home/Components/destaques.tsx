@@ -25,7 +25,7 @@ function Destaques() {
 
     return (
         <>
-            <Carousel className="relative w-full mx-auto overflow-hidden shadow-[0px_4px_10px_0px_#807e7e]"
+            <Carousel className="relative w-full mx-auto overflow-hidden shadow-[0px_4px_10px_0px_#807e7e] -mt-[180px]"
             plugins={[
                 Autoplay({
                     delay: 4000,

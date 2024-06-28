@@ -11,6 +11,7 @@ import { Sobre } from "./pages/Sobre/sobre";
 import { Doacoes } from "./pages/Doacoes/doacoes";
 import { Voluntariado } from "./pages/Voluntariado/voluntariado";
 import { Rifa } from "./pages/Rifa/rifa";
+import { PerfilOng } from "./pages/PerfilOng/perfil";
 
 export function Router() {
   return (
@@ -23,6 +24,7 @@ export function Router() {
         <Route path="/doacoes" element={<Doacoes />} />
         <Route path="/voluntario" element={<Voluntariado />} />
         <Route path="/rifa" element={<Rifa />} />
+        <Route path="/perfilong" element={<PerfilOng />} />
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />

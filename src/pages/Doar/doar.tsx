@@ -10,7 +10,7 @@ import { DialogDoacao } from './components/dialog-doacao'
 export function Doar(){
   return(
     <div className="flex flex-col items-center">
-      <div className="max-w-[80vw] mt-[30%] lg:mt-[165px] mb-10">
+      <div className="max-w-[80vw] mb-10">
         <div className="flex gap-8 items-center font-medium text-3xl mb-10 text-[#004358]">  
           <img src={BridgeLogo} alt="Imagem da logo da impacto" className="h-10" />
           <p>Olá, bem vind@ de volta</p>
