@@ -10,8 +10,9 @@ import { Doar } from "./pages/Doar/doar";
 import { Sobre } from "./pages/Sobre/sobre";
 import { Doacoes } from "./pages/Doacoes/doacoes";
 import { Voluntariado } from "./pages/Voluntariado/voluntariado";
-import { Rifa } from "./pages/Rifa/rifa";
+import { CriarRifa } from "./pages/Rifa/CriarRifa/rifa";
 import { PerfilOng } from "./pages/PerfilOng/perfil";
+import { EditarRifa } from "./pages/Rifa/EditarRifa/editarrifa";
 
 export function Router(){
   return(
@@ -23,7 +24,8 @@ export function Router(){
         <Route path="/sobrenos" element={<Sobre />} />
         <Route path="/doacoes" element={<Doacoes />} />
         <Route path="/voluntario" element={<Voluntariado />} />
-        <Route path="/rifa" element={<Rifa />} />
+        <Route path="/rifa" element={<CriarRifa />} />
+        <Route path="/rifa/edit" element={<EditarRifa />} />
         <Route path="/perfilong" element={<PerfilOng />} />
       </Route>
       <Route path="/login" element={<Login />} />

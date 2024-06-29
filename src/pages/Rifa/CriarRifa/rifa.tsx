@@ -3,7 +3,7 @@ import Ticket from "./assets/ticket.svg";
 import { ButtonImpacto } from "@/components/components-impacto/button";
 import Arrow from "./assets/arrow.svg";
 
-export function Rifa() {
+export function CriarRifa() {
 
     return (
         <div className=" mb-[20px] ">
