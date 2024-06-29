@@ -6,6 +6,7 @@ import { Hero } from "./Components/hero";
 import PlaceholderXbox from '@/assets/images-shopping/placeholder-card-example.png'
 import PlaceholderIfood from '@/assets/images-shopping/placegolder-ifood.png'
 import PlaceholderMcDonalds from '@/assets/images-shopping/mcdonalds-brazil.webp'
+import { api } from "@/lib/axios";
 
 interface Vounchers {
     id: number,
@@ -19,10 +20,20 @@ interface Vounchers {
 export function ShoppingPage(){
   document.title = "Resgate seus pontos || Impacto"
   const [vounchers, setVounchers] = useState<Vounchers[] | []>([])
+  const [erro, setErro] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:8085/').then(response => response.json()).then(data => {
-      setVounchers(data.vounchers)
+    api.get('/')
+    .then(({ data: { vounchers } }) => {
+      setVounchers(vounchers)
+    })
+    .catch((err) => {
+      const { code } = err
+      
+      if (code === "ERR_NETWORK") {
+        setErro('Não foi possível carregar os vounchers e cupons de desconto')
+      }
+      
     })
   },[])
 
@@ -60,13 +71,17 @@ export function ShoppingPage(){
 
           <section className="flex justify-between items-center gap-6 w-full flex-wrap">
             {
-              vounchers.length > 0 && (
+              erro === '' ?
+              (vounchers.length > 0 && (
                 <>
                   <Recompensa image={PlaceholderXbox} nome={vounchers[7].nome} price={vounchers[7].pontos} />
                   <Recompensa image={PlaceholderMcDonalds} nome={vounchers[6].nome} price={vounchers[6].pontos} />
                   <Recompensa image={PlaceholderIfood} nome={vounchers[11].nome} price={vounchers[11].pontos} />
                 </>
-              )
+              )) :
+              <span className="text-xl font-bold text-red-600">
+                {erro}
+              </span>
             }
           </section>
         </section>
