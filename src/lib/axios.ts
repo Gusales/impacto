@@ -1,5 +1,7 @@
 import axios from 'axios'
 
-export const api = axios.create({
-  baseURL: 'http://localhost:8085',
+const { VITE_VOUNCHERS_API_LINK } = import.meta.env
+
+export const vounchersAPI = axios.create({
+  baseURL: VITE_VOUNCHERS_API_LINK,
 })

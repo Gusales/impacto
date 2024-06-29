@@ -6,7 +6,7 @@ import { Hero } from "./Components/hero";
 import PlaceholderXbox from '@/assets/images-shopping/placeholder-card-example.png'
 import PlaceholderIfood from '@/assets/images-shopping/placegolder-ifood.png'
 import PlaceholderMcDonalds from '@/assets/images-shopping/mcdonalds-brazil.webp'
-import { api } from "@/lib/axios";
+import { vounchersAPI } from "@/lib/axios";
 
 interface Vounchers {
     id: number,
@@ -23,7 +23,7 @@ export function ShoppingPage(){
   const [erro, setErro] = useState('')
 
   useEffect(() => {
-    api.get('/')
+    vounchersAPI.get('/')
     .then(({ data: { vounchers } }) => {
       setVounchers(vounchers)
     })
