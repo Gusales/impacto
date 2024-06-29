@@ -42,7 +42,7 @@ const impactantes = [
     {
       nome: "Gustavo Sales",
       image: Gustavo,
-      cargo: "Q.A e Full stack",
+      cargo: "Full stack",
       github: "https://github.com/Gusales",
       linkedin: "https://www.linkedin.com/in/devgusales/"
     },
@@ -56,7 +56,7 @@ const impactantes = [
     {
       nome: "Kauã Dolores",
       image: Kaua,
-      cargo: "Back end e DevOps",
+      cargo: "Back end",
       github: "https://github.com/Kauadoloress",
       linkedin: "https://www.linkedin.com/in/kaua-dolores-developer/"
     },
