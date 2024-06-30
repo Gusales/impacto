@@ -37,12 +37,17 @@ const languages = [
   }
 ]
 
-export function SelectLanguages() {
+interface SelectLanguagesProps{
+  textColor?: 'black' | 'white'
+}
+
+export function SelectLanguages({ textColor }: SelectLanguagesProps) {
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState(localStorage.getItem('lang'))
 
   const { i18n } = useTranslation()
- 
+
+  
   function handleSetTranslation(currentValue: string){
     setValue(currentValue === value ? "" : currentValue)
     setOpen(state => !state)
@@ -57,7 +62,7 @@ export function SelectLanguages() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between border-0 hover:bg-transparent hover:underline bg-transparent text-white hover:text-zinc-100"
+          className={`flex w-fit justify-between border-0 hover:bg-transparent hover:underline bg-transparent ${textColor === 'black' ? "text-black hover:text-zinc-600" : "text-white hover:text-zinc-100"}  pr-0`}
         >
           {value
             ? (<div className="flex items-center gap-2">
@@ -74,7 +79,7 @@ export function SelectLanguages() {
           <ChevronDown className={`ml-2 h-4 w-4 shrink-0 opacity-50 ${open && "rotate-180"}`} />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
+      <PopoverContent className="w-[200px] p-0 z-[99]">
       <Command>
         <CommandList>
           <CommandGroup>
@@ -87,7 +92,6 @@ export function SelectLanguages() {
                 >
                   <img src={item.flag} className="rounded-full object-cover h-[20px] w-[20px]"/>
                   {item.label}
-                  
                 </CommandItem>
             ))}
           </CommandGroup>
