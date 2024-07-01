@@ -1,11 +1,17 @@
+import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import LoginRedirectModal from '../../../components/components-impacto/LoginRedirectModal';
 import Proa from "../assets/instituto-proa.jpg";
 import MissaoVida from "../assets/missao-vida.png";
 import PulseMais from "../assets/pulse-mais.jpg";
 
+const HomeContent: React.FC = () => {
+    const { t } = useTranslation();
+    const [modalOpen, setModalOpen] = useState(false);
 
-function HomeContent() {
-    const { t } = useTranslation()
+    const handleCandidatarClick = () => {
+        setModalOpen(true);
+    };
 
     return (
         <>
@@ -38,14 +44,20 @@ function HomeContent() {
                             </div>
 
                             <p className="font-[500] pl-1">{t('requisitos')}</p>
-                            <ul className=" text-[18px] font-[500] list-disc p-7">
-                                <li>{t('requisitoa')}</li>
-                                <li>{t('requisitoa')}</li>
-                                <li>{t('requisitoa')}</li>
-                            </ul>
-                            <div className="text-center">
-                                <button className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]">{t('candidatar')}</button>
-                            </div>
+                                <ul className=" text-[18px] font-[500] list-disc p-7">
+                                    <li>{t('requisitoa')}</li>
+                                    <li>{t('requisitoa')}</li>
+                                    <li>{t('requisitoa')}</li>
+                                </ul>
+                                <div className="text-center">
+                                    <button
+                                        className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
+                                        onClick={handleCandidatarClick}
+                                    >
+                                        {t('candidatar')}
+                                    </button>
+                                </div>
+
                         </section>
 
                         <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
@@ -60,14 +72,20 @@ function HomeContent() {
                             </div>
 
                             <p className="font-[500] pl-1">{t('requisitos')}</p>
-                            <ul className=" text-[18px] font-[500] list-disc p-7">
-                                <li>{t('requisitoa')}</li>
-                                <li>{t('requisitoa')}</li>
-                                <li>{t('requisitoa')}</li>
-                            </ul>
-                            <div className="text-center">
-                                <button className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]">{t('candidatar')}</button>
-                            </div>
+                                <ul className=" text-[18px] font-[500] list-disc p-7">
+                                    <li>{t('requisitoa')}</li>
+                                    <li>{t('requisitoa')}</li>
+                                    <li>{t('requisitoa')}</li>
+                                </ul>
+                                <div className="text-center">
+                                    <button
+                                        className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
+                                        onClick={handleCandidatarClick}
+                                    >
+                                        {t('candidatar')}
+                                    </button>
+                                </div>
+
                         </section>
 
                         <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
@@ -82,19 +100,26 @@ function HomeContent() {
                             </div>
 
                             <p className="font-[500] pl-1">{t('requisitos')}</p>
-                            <ul className=" text-[18px] font-[500] list-disc p-7">
-                                <li>{t('requisitoa')}</li>
-                                <li>{t('requisitoa')}</li>
-                                <li>{t('requisitoa')}</li>
-                            </ul>
-                            <div className="text-center">
-                                <button className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]">{t('candidatar')}</button>
-                            </div>
+                                <ul className=" text-[18px] font-[500] list-disc p-7">
+                                    <li>{t('requisitoa')}</li>
+                                    <li>{t('requisitoa')}</li>
+                                    <li>{t('requisitoa')}</li>
+                                </ul>
+                                <div className="text-center">
+                                    <button
+                                        className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
+                                        onClick={handleCandidatarClick}
+                                    >
+                                        {t('candidatar')}
+                                    </button>
+                                </div>
+
                         </section>
                     </div>
                 </div>
+                <LoginRedirectModal open={modalOpen} onOpenChange={setModalOpen} />
             </main>
         </>
-    )
-}
-export default HomeContent
+    );
+};
+export default HomeContent;
