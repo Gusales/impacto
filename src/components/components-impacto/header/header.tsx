@@ -21,7 +21,7 @@ export function Header(){
 
   return (
     <>
-      <header className="w-full flex flex-col items-center gap-4 shadow-md fixed top-0 z-[99] bg-white overflow-hidden">
+      <header className="w-full flex flex-col items-center gap-4 shadow-md fixed top-0 z-[98] bg-white overflow-hidden">
         <section className="bg-linear-blue w-full flex pt-4 pb-3 justify-center shadow-md">
           <div className="w-[80%] flex items-center justify-between">
           <NavLink to="/">

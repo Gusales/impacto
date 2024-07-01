@@ -19,11 +19,10 @@ const LoginRedirectModal: React.FC<LoginRedirectModalProps> = ({ open, onOpenCha
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-50" />
+        <Dialog.Overlay className="fixed z-[99] inset-0 bg-black bg-opacity-50" />
         <Dialog.Content
           className={cn(
-            "fixed bottom-0 left-0 right-0 m-auto max-h-[50%] w-full max-w rounded-t-3xl bg-white p-10 shadow-lg transition-transform duration-300",
-
+            "fixed z-[99] bottom-0 left-0 right-0 m-auto max-h-[50%] w-full max-w rounded-t-3xl bg-white p-10 shadow-lg transition-transform duration-300",
             open ? "translate-y-0" : "translate-y-full"
           )}
           style={{ transitionProperty: 'transform' }}
