@@ -14,24 +14,23 @@ const HomeContent: React.FC = () => {
     };
 
     return (
-        <>
-            <main className="padding-pagina">
+            <main className="mx-auto w-[80%] flex flex-col items-center">
                     <div>
-                        <h2 className="text-[28px] font-[500] m-5">{t('recomendacoesDia')}</h2>
-                        <p className="font-[#313131] text-[18px] ml-5">{t('conhecaOng')}</p>
+                        <h2 className="text-2xl text-center sm:text-start font-bold m-5">{t('recomendacoesDia')}</h2>
+                        <p className="font-[#313131] text-[18px] ml-5 text-center sm:text-start">{t('conhecaOng')}</p>
 
 
-                        <div className="flex m-5 mb-28 mt-[72px] justify-between">
-                            <a href="#"><img className="w-[350px] h-[350px] rounded-[30px]" src={ Proa } alt="Logo da ONG" /></a>
-                            <a href="#"><img className="w-[350px] h-[350px] rounded-[30px]" src={ MissaoVida } alt="Logo da ONG" /></a>
-                            <a href="#"><img className="w-[350px] h-[350px] rounded-[30px]" src={ PulseMais } alt="Logo da ONG" /></a>
+                        <div className="flex flex-col items-center sm:flex-row m-5 mb-28 mt-10 gap-4 justify-between">
+                            <a href="#"><img className="w-[200px] sm:w-[350px] sm:h-[350px] rounded-[30px] object-cover hover:scale-105 transition-all" src={ Proa } alt="Logo da ONG" /></a>
+                            <a href="#"><img className="w-[200px] sm:w-[350px] sm:h-[350px] rounded-[30px] object-cover hover:scale-105 transition-all" src={ MissaoVida } alt="Logo da ONG" /></a>
+                            <a href="#"><img className="w-[200px] sm:w-[350px] sm:h-[350px] rounded-[30px] object-cover hover:scale-105 transition-all" src={ PulseMais } alt="Logo da ONG" /></a>
                         </div>
                     </div>
 
                 <div className="m-5">
-                    <h2 className="m-5 font-[600] text-[28px]">{t('vagaIdeal')}</h2>
+                    <h2 className="m-5 font-[600] text-[28px] text-center sm:text-start">{t('vagaIdeal')}</h2>
 
-                    <div className="flex justify-between">
+                    <div className="flex flex-col sm:flex-row justify-between">
                         <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
                             <div className="flex items-center justify-center">
                                 <div className="flex items-center space-x-4">
@@ -119,7 +118,6 @@ const HomeContent: React.FC = () => {
                 </div>
                 <LoginRedirectModal open={modalOpen} onOpenChange={setModalOpen} />
             </main>
-        </>
     );
 };
 export default HomeContent;
