@@ -6,9 +6,20 @@ import { Points } from "../points";
 
 import styles from './style.module.css'
 import { SelectLanguages } from "../languages";
+import { useEffect, useState } from "react";
+import { UserLogin } from "../user-login";
 
 export function Menu({ isShow }: { isShow: boolean }){
+  const [idUsuario, setIdUsuario] = useState('')
   const { t } = useTranslation()
+
+  useEffect(() => {
+    const idUsuario = localStorage.getItem('userId')
+
+    if (idUsuario) {
+      setIdUsuario(idUsuario)
+    }
+  }, [])
 
   if (!isShow) return;
 
@@ -20,7 +31,9 @@ export function Menu({ isShow }: { isShow: boolean }){
         <NavLink to="/doacoes" className="transition-all hover:underline hover:underline-offset-2">{t('headerDoacao')}</NavLink>
         <NavLink to="/voluntario" className="transition-all hover:underline hover:underline-offset-2">{t('headerTrabalhoVoluntario')}</NavLink>
         <SelectLanguages textColor="black" />
-        <EmptyLogin />
+        {
+          idUsuario !== '' ? <UserLogin userId={Number(idUsuario)} /> : <EmptyLogin />
+        }
 
         <Points points={0} />
       </section>
