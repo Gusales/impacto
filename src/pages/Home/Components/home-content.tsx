@@ -1,16 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import LoginRedirectModal from '../../../components/components-impacto/LoginRedirectModal';
 import Proa from "../assets/instituto-proa.jpg";
 import MissaoVida from "../assets/missao-vida.png";
 import PulseMais from "../assets/pulse-mais.jpg";
+import { useNavigate } from 'react-router-dom';
 
 const HomeContent: React.FC = () => {
     const { t } = useTranslation();
+    const [idUsuario, setIdUsuario] = useState('')
     const [modalOpen, setModalOpen] = useState(false);
 
+    const navigate = useNavigate()
+
+
+    useEffect(() => {
+    const idUsuario = localStorage.getItem('userId')
+
+    if (idUsuario) {
+        setIdUsuario(idUsuario)
+    }
+    }, [])
+
     const handleCandidatarClick = () => {
-        setModalOpen(true);
+        idUsuario === '' ? setModalOpen(true) : navigate('/doar');
     };
 
     return (

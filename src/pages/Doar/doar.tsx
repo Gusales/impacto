@@ -6,8 +6,13 @@ import Banner from '@/assets/images-placeholder/CapaOng.jpg'
 import Logo from '@/assets/images-placeholder/logo.jpg'
 import ImagePlaceholder from '@/assets/images-placeholder/Image-Vaga.jpg'
 import { DialogDoacao } from './components/dialog-doacao'
+import { useLayoutEffect } from 'react'
 
 export function Doar(){
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [])
+
   return(
     <div className="flex flex-col items-center">
       <div className="max-w-[80vw] mb-10">
