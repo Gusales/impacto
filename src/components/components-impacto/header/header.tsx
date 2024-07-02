@@ -6,14 +6,24 @@ import Logo from '@/assets/images-impacto/Logo.svg'
 
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { EmptyLogin } from './Components/empty-login'
 import { Menu } from './Components/menu/index'
 import { Points } from './Components/points'
+import { UserLogin } from './Components/user-login'
 
 export function Header(){
   const [showMenu, setShowMenu] = useState(false)
+  const [idUsuario, setIdUsuario] = useState('')
   const { t } = useTranslation()
+
+  useEffect(() => {
+    const idUsuario = localStorage.getItem('userId')
+
+    if (idUsuario) {
+      setIdUsuario(idUsuario)
+    }
+  }, [])
 
   function handleToogleMenu(){
     setShowMenu(state => !state)
@@ -46,7 +56,9 @@ export function Header(){
             </nav>
 
             <div className="hidden sm:flex gap-20">
-              <EmptyLogin />
+              {
+                idUsuario !== '' ? <UserLogin userId={Number(idUsuario)} /> : <EmptyLogin />
+              }
               <SelectLanguages />
             </div>
 

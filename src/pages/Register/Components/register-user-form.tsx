@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { Steps } from "./steps";
 
@@ -26,6 +26,8 @@ export function RegisterUserForm(){
   const [step, setStep] = useState(0)
   const [senha, setSenha] = useState('')
   const [confirmaSenha, setConfirmaSenha] = useState('')
+
+  const navigate = useNavigate()
 
   const [body, setBody] = useState<RegisterBody>({
     cpf: '',
@@ -93,7 +95,8 @@ export function RegisterUserForm(){
 
         try {
           const response = await api.post('/api/usuarios', body)
-          console.log(response)
+          localStorage.setItem('userId', response.data.idUsuarios)
+          navigate('/')
         } catch (error) {
           console.log(error)
         }
@@ -140,12 +143,12 @@ export function RegisterUserForm(){
       <section className={`${step === 1 ? "flex" : "hidden"} flex-col`}>
         <div className="space-y-4 mb-3">
           <Label htmlFor="email">E-mail:</Label>
-          <InputImpacto id="email" placeholder="Digite seu e-mail" name="email" required />
+          <InputImpacto id="email" placeholder="Digite seu e-mail" name="email" required={step === 1} />
         </div>
 
         <div className="space-y-4 mb-3">
           <Label htmlFor="telefone">Telefone:</Label>
-          <InputImpacto id="telefone" placeholder="Digite seu telefone" name="telefone" required />
+          <InputImpacto id="telefone" placeholder="Digite seu telefone" name="telefone" required={step === 1} />
         </div>
       </section>
 
