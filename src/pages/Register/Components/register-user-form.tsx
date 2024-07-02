@@ -14,7 +14,7 @@ const passos = ["Sobre você", "contato", "senha"]
 interface RegisterBody{
   nome: string
   cpf: string
-  gen: 1 | 2 | 3
+  genero: 'masculino' | 'feminino' | 'outros'
   doadorTempo?: boolean
   email: string
   telefone: string
@@ -31,7 +31,7 @@ export function RegisterUserForm(){
 
   const [body, setBody] = useState<RegisterBody>({
     cpf: '',
-    gen: 1,
+    genero: 'outros',
     nome: '',
     doadorTempo: false,
     email: '',
@@ -63,7 +63,7 @@ export function RegisterUserForm(){
             ...state,
             nome: formData.get('name')?.toString() || '',
             cpf: formData.get('cpf')?.toString() || '',
-            gen: Number(formData.get('genero')) as 1 | 2 | 3,
+            genero: formData.get('genero')?.toString() as 'masculino' | 'feminino' | 'outros',
             doadorTempo: formData.get('doadorTempo') === 'on',
             dataNascimento: new Date(formData.get('dataNascimento')?.toString() || '1970-01-01').toISOString()
           }
@@ -84,21 +84,23 @@ export function RegisterUserForm(){
         break;
 
       default:
-        if (!asSenhasNaoSaoAsMesmas) {
+        console.log(formData.get('senha')?.toString())
+        if (formData.get('senha')?.toString() === formData.get('confirmarSenha')?.toString()) {
           setBody(state => {
             return{
               ...state,
-              senha: senha
+              senha: formData.get('senha')?.toString() || ''
             }
           })
-        }
-
-        try {
-          const response = await api.post('/api/usuarios', body)
-          localStorage.setItem('userId', response.data.idUsuarios)
-          navigate('/')
-        } catch (error) {
-          console.log(error)
+          
+          try {
+            const response = await api.post('/api/usuarios', body)
+            localStorage.setItem('userId', response.data.idUsuarios)
+            navigate('/')
+          } catch (error) {
+            console.log(error)
+          }
+      
         }
       break;
     }
@@ -123,9 +125,9 @@ export function RegisterUserForm(){
             <Label htmlFor="genero" className="leading-relaxed mt-0 p-0">Qual seu gênero</Label>
             <select name="genero" id="genero" className="w-fit cursor-pointer" required>
               <option value="" disabled selected className="hidden">Selecione o sexo...</option>
-              <option value="1">Masculino</option>
-              <option value="2">Feminino</option>
-              <option value="3">Prefiro não informar</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outros">Prefiro não informar</option>
             </select>
           </div>
           <div className="space-y-1 mb-3 flex flex-col gap-2">
@@ -156,11 +158,11 @@ export function RegisterUserForm(){
       <div className={`${step === 2 ? "flex" : "hidden"} flex-col`}>
         <div className="space-y-4 mb-3">
           <Label htmlFor="senha">Senha:</Label>
-          <InputImpacto id="senha" name="senha" placeholder="Digite sua senha" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
+          <InputImpacto id="senha" name="senha" placeholder="Digite sua senha" type="password" onChange={(e) => setSenha(e.target.value)} />
         </div>
         <div className="space-y-4 mb-3">
           <Label htmlFor="confirmarSenha">Confirmar senha:</Label>
-          <InputImpacto id="confirmarSenha" placeholder="Confirme sua senha" type="password" value={confirmaSenha} onChange={(e) => setConfirmaSenha(e.target.value)} />
+          <InputImpacto id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" type="password" onChange={(e) => setConfirmaSenha(e.target.value)} />
         </div>
 
         {asSenhasNaoSaoAsMesmas && (
