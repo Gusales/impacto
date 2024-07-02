@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { cn } from '@/lib/utils';
 import { IoClose } from 'react-icons/io5';
 
+import { NavLink } from 'react-router-dom'
+
 interface LoginRedirectModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
@@ -40,18 +42,19 @@ const LoginRedirectModal: React.FC<LoginRedirectModalProps> = ({ open, onOpenCha
             💖 Faça parte dessa corrente do bem e ajude a transformar vidas!
           </Dialog.Description>
           <div className="mt-4 flex justify-center space-x-10">
-            <button
-              onClick={redirectToUserLogin}
+            <NavLink 
+              to="/register"
               className="rounded-md bg-white px-16 py-2 text-sm font-medium text-[#004AAD] border-2 border-[#004AAD] hover:bg-[#004AAD] hover:text-white"
             >
               {t('cadastrar-se')}
-            </button>
-            <button
-              onClick={redirectToUserLogin}
+            </NavLink>
+
+            <NavLink 
+              to="/login" 
               className="rounded-md bg-[#004AAD] px-16 py-2 text-sm font-medium text-white border-2 border-[#004AAD]"
             >
               {t('Login')}
-            </button>
+            </NavLink>
           </div>
 
         </Dialog.Content>
