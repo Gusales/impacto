@@ -14,10 +14,6 @@ interface LoginRedirectModalProps {
 const LoginRedirectModal: React.FC<LoginRedirectModalProps> = ({ open, onOpenChange }) => {
   const { t } = useTranslation();
 
-  const redirectToUserLogin = () => {
-    window.location.href = '/user-login';
-  };
-
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <Dialog.Portal>
