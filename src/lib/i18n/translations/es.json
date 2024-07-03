@@ -61,9 +61,30 @@
     "vagaIdeal": "TU POSICIÓN IDEAL",
     "tituloVaga": "Título del puesto",
     "informacoes": "Ubicación | Hora",
+    "informacoesproa": "Remoto | 09:30",
     "requisitos": "Requisitos necesarios:",
     "requisitoa": "Requisito",
     "candidatar": "Aplicar",
+
+    "vagaproa": "Comisión De Selección",
+
+    "requisitoproaum": "Experiencia con entrevistas",
+    "requisitoproadois": "Disponibilidad",
+    "requisitoproatres": "Intereses",
+
+    "vagamissaovida": "Programador Web",
+    "informacoesmissaovida": "Remoto | Dia Entero",
+
+    "requisitomissaovidaum": "ReactJS",
+    "requisitomissaovidadois": "MySQL",
+    "requisitomissaovidatres": "Desarrollo Web",
+
+    "vagapulsemais": "Mentor",
+    "informacionespulsemais": "Híbrido| Tarde",
+
+    "requisitopulsemaisum": "Experiencia Profesional",
+    "requisitopulsemaisdois": "Disponibilidad",
+    "requisitopulsemaistres": "Comunicación",
 
     "sobreSurgiuImpactoTitulo": "¿Cómo surgió Impacto?",
     "sobreSurgiuImpacto": "Impacto surgió de 7 personas que se conocieron en el Instituto PROA, un lugar que ofrece un curso de programación. Este curso implica un proyecto grupal llamado Demoday donde tienes que hacer una presentación. A partir de esto, surgió la idea de Impacto y vimos cuánto enfrentan desafíos significativos las ONG y las Instituciones. Por eso, lo que comenzó como un proyecto se convirtió en una Startup porque sabemos que podemos transformar vidas y contribuir a una mejor sociedad.",

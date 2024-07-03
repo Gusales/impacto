@@ -65,6 +65,29 @@
       "requisitoa": "Requisito",
       "candidatar": "Me candidatar",
 
+      "vagaproa": "Banca de Seleção",
+      "informacoesproa": "Remoto | 09:30",
+
+      "requisitoproaum": "Experiência Profissional",
+      "requisitoproadois": "Disponibilidade",
+      "requisitoproatres": "Interesse",
+
+      "vagamissaovida": "Programador Web",
+      "informacoesmissaovida": "Remoto | Dia inteiro",
+
+      "requisitomissaovidaum": "ReactJS",
+      "requisitomissaovidadois": "MySQL",
+      "requisitomissaovidatres": "Desenvolvimento Web",
+
+
+
+      "vagapulsemais": "Mentor",
+      "informacoespulsemais": "Híbrido| Tarde",
+
+      "requisitopulsemaisum": "Experiência Profissional",
+      "requisitopulsemaisdois": "Disponibilidade",
+      "requisitopulsemaistres": "Comunicação",
+
       "sobreSurgiuImpactoTitulo": "Como surgiu a Impacto?",
       "sobreSurgiuImpacto": "A Impacto surgiu com 7 pessoas que se conheceram no Instituto PROA, lugar onde é oferecido um curso de programação, esse curso consiste em realizar um projeto em grupo chamado Demoday onde você tem que fazer uma apresentação do mesmo. a partir disso surgiu a ideia da Impacto e vimos o quanto ONG’s e Instituições passam por bastante dificuldade. Por isso o que era um projeto se transformou em uma Startup pois sabemos que nos podemos transformar vidas e contribuir para uma sociedade melhor.",
       "sobreNossaMissaoTitulo": "Nossa missão",

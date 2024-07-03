@@ -61,9 +61,32 @@
     "vagaIdeal": "YOUR IDEAL POSITION",
     "tituloVaga": "Position title",
     "informacoes": "Location | Time",
+    "informacoesproa": "Remote | 09:30",
     "requisitos": "Necessary Requirements:",
     "requisitoa": "Requirement",
     "candidatar": "Apply",
+
+    "vagaproa": "Pelection Panel",
+
+
+    "requisitoproaum": "Experience with interviews",
+    "requisitoproadois": "Availability",
+    "requisitoproatres": "Interest",
+
+    "vagamissaovida": "Web Developer",
+      "informacoesmissaovida": "Remote | All Day",
+
+    "requisitomissaovidaum": "ReactJS",
+    "requisitomissaovidadois": "MySQL",
+    "requisitomissaovidatres": "Web development",
+
+    "vagapulsemais": "Mentor",
+    "informacoespulsemais": "Hybrid| Afternoon",
+
+    "requisitopulsemaisum": "Professional Experience",
+    "requisitopulsemaisdois": "Availability",
+    "requisitopulsemaistres": "Communication",
+
 
     "sobreSurgiuImpactoTitulo": "How did Impact come about?",
     "sobreSurgiuImpacto": "Impact emerged from 7 people who met at the PROA Institute, a place that offers a programming course. This course involves a group project called Demoday where you have to make a presentation. From this, the idea of Impact arose, and we saw how much NGOs and Institutions face significant challenges. That’s why what started as a project turned into a Startup because we know we can transform lives and contribute to a better society.",

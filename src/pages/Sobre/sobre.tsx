@@ -69,6 +69,8 @@ const impactantes = [
     },
 ]
 
+
+
 export function Sobre() {
   const { t } = useTranslation()
 
@@ -175,8 +177,6 @@ export function Sobre() {
                     </article>
                   </div>
                 </section>
-
-                
             </main>
         </div>
     )

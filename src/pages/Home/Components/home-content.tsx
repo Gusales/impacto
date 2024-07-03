@@ -44,90 +44,111 @@ const HomeContent: React.FC = () => {
                     <h2 className="m-5 font-[600] text-[28px] text-center sm:text-start">{t('vagaIdeal')}</h2>
 
                     <div className="flex flex-col sm:flex-row justify-between">
-                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
-                            <div className="flex items-center justify-center">
-                                <div className="flex items-center space-x-4">
-                                    <div>
-                                        <h2 className="text-[28px] font-semibold mr-14">{t('tituloVaga')}</h2>
-                                        <p className="text-base text-[18px] mb-2">{t('informacoes')}</p>
-                                    </div>
-                                    <img src={ Proa } alt="Logo da ONG" className="object-cover rounded-[10px] w-[75px] h-[75px]" />
-                                </div>
-                            </div>
+            <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
+              <div className="flex items-center justify-center">
+                <div className="flex items-center space-x-4">
+                  <div>
+                    <h2 className="text-[28px] font-semibold mr-14">
+                      {t("vagaproa")}
+                    </h2>
+                    <p className="text-base text-[18px] mb-2">
+                      {t("informacoesproa")}
+                    </p>
+                  </div>
+                  <img
+                    src={Proa}
+                    alt="Logo da ONG"
+                    className="object-cover rounded-[10px] w-[75px] h-[75px]"
+                  />
+                </div>
+              </div>
 
-                            <p className="font-[500] pl-1">{t('requisitos')}</p>
-                                <ul className=" text-[18px] font-[500] list-disc p-7">
-                                    <li>{t('requisitoa')}</li>
-                                    <li>{t('requisitoa')}</li>
-                                    <li>{t('requisitoa')}</li>
-                                </ul>
-                                <div className="text-center">
-                                    <button
-                                        className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
-                                        onClick={handleCandidatarClick}
-                                    >
-                                        {t('candidatar')}
-                                    </button>
-                                </div>
+              <p className="font-[500] pl-1">{t("requisitos")}</p>
+              <ul className=" text-[18px] font-[500] list-disc p-7">
+                <li>{t("requisitoproaum")}</li>
+                <li>{t("requisitoproadois")}</li>
+                <li>{t("requisitoproatres")}</li>
+              </ul>
+              <div className="text-center">
+                <button
+                  className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
+                  onClick={handleCandidatarClick}
+                >
+                  {t("candidatar")}
+                </button>
+              </div>
+            </section>
 
-                        </section>
+            <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
+              <div className="flex items-center justify-center">
+                <div className="flex items-center space-x-4">
+                  <div>
+                    <h2 className="text-[28px] font-semibold mr-14">
+                      {t("vagamissaovida")}
+                    </h2>
+                    <p className="text-base text-[18px] mb-2">
+                      {t("informacoesmissaovida")}
+                    </p>
+                  </div>
+                  <img
+                    src={MissaoVida}
+                    alt="Logo da ONG"
+                    className="object-cover rounded-[10px] w-[75px] h-[75px]"
+                  />
+                </div>
+              </div>
 
-                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
-                            <div className="flex items-center justify-center">
-                                <div className="flex items-center space-x-4">
-                                    <div>
-                                        <h2 className="text-[28px] font-semibold mr-14">{t('tituloVaga')}</h2>
-                                        <p className="text-base text-[18px] mb-2">{t('informacoes')}</p>
-                                    </div>
-                                    <img src={ MissaoVida } alt="Logo da ONG" className="object-cover rounded-[10px] w-[75px] h-[75px]" />
-                                </div>
-                            </div>
+              <p className="font-[500] pl-1">{t("requisitos")}</p>
+              <ul className=" text-[18px] font-[500] list-disc p-7">
+                <li>{t("requisitomissaovidaum")}</li>
+                <li>{t("requisitomissaovidadois")}</li>
+                <li>{t("requisitomissaovidatres")}</li>
+              </ul>
+              <div className="text-center">
+                <button
+                  className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
+                  onClick={handleCandidatarClick}
+                >
+                  {t("candidatar")}
+                </button>
+              </div>
+            </section>
 
-                            <p className="font-[500] pl-1">{t('requisitos')}</p>
-                                <ul className=" text-[18px] font-[500] list-disc p-7">
-                                    <li>{t('requisitoa')}</li>
-                                    <li>{t('requisitoa')}</li>
-                                    <li>{t('requisitoa')}</li>
-                                </ul>
-                                <div className="text-center">
-                                    <button
-                                        className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
-                                        onClick={handleCandidatarClick}
-                                    >
-                                        {t('candidatar')}
-                                    </button>
-                                </div>
+            <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
+              <div className="flex items-center justify-center">
+                <div className="flex items-center space-x-4">
+                  <div>
+                    <h2 className="text-[28px] font-semibold mr-14">
+                      {t("vagapulsemais")}
+                    </h2>
+                    <p className="text-base text-[18px] mb-2">
+                      {t("informacoespulsemais")}
+                    </p>
+                  </div>
+                  <img
+                    src={PulseMais}
+                    alt="Logo da ONG"
+                    className="object-cover rounded-[10px] w-[75px] h-[75px]"
+                  />
+                </div>
+              </div>
 
-                        </section>
-
-                        <section className="shadow-xl bg-[#DAF1FFAD] max-w-[400px] rounded-[24px] m-2 p-5">
-                            <div className="flex items-center justify-center">
-                                <div className="flex items-center space-x-4">
-                                    <div>
-                                        <h2 className="text-[28px] font-semibold mr-14">{t('tituloVaga')}</h2>
-                                        <p className="text-base text-[18px] mb-2">{t('informacoes')}</p>
-                                    </div>
-                                    <img src={ PulseMais } alt="Logo da ONG" className="object-cover rounded-[10px] w-[75px] h-[75px]" />
-                                </div>
-                            </div>
-
-                            <p className="font-[500] pl-1">{t('requisitos')}</p>
-                                <ul className=" text-[18px] font-[500] list-disc p-7">
-                                    <li>{t('requisitoa')}</li>
-                                    <li>{t('requisitoa')}</li>
-                                    <li>{t('requisitoa')}</li>
-                                </ul>
-                                <div className="text-center">
-                                    <button
-                                        className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
-                                        onClick={handleCandidatarClick}
-                                    >
-                                        {t('candidatar')}
-                                    </button>
-                                </div>
-
-                        </section>
-                    </div>
+              <p className="font-[500] pl-1">{t("requisitos")}</p>
+              <ul className=" text-[18px] font-[500] list-disc p-7">
+                <li>{t("requisitopulsemaisum")}</li>
+                <li>{t("requisitopulsemaisdois")}</li>
+                <li>{t("requisitopulsemaistres")}</li>
+              </ul>
+              <div className="text-center">
+                <button
+                  className="bg-[#004AAD] text-white font-[600] py-2 px-4 rounded-[10px]"
+                  onClick={handleCandidatarClick}
+                >
+                  {t("candidatar")}
+                </button>
+              </div>
+            </section>
+          </div>
                 </div>
                 <LoginRedirectModal open={modalOpen} onOpenChange={setModalOpen} />
             </main>
