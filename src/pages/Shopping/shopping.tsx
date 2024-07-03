@@ -6,7 +6,7 @@ import { Hero } from "./Components/hero";
 import PlaceholderXbox from '@/assets/images-shopping/placeholder-card-example.png'
 import PlaceholderIfood from '@/assets/images-shopping/placegolder-ifood.png'
 import PlaceholderMcDonalds from '@/assets/images-shopping/mcdonalds-brazil.webp'
-import { api, vounchersAPI } from "@/lib/axios";
+import { api } from "@/lib/axios";
 import { useTranslation } from "react-i18next";
 interface User{
   nome: string
