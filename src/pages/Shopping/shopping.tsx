@@ -8,42 +8,36 @@ import PlaceholderIfood from '@/assets/images-shopping/placegolder-ifood.png'
 import PlaceholderMcDonalds from '@/assets/images-shopping/mcdonalds-brazil.webp'
 import { api, vounchersAPI } from "@/lib/axios";
 import { useTranslation } from "react-i18next";
-
-interface Vounchers {
-    id: number,
-    nome: string,
-    descricao: string,
-    codigo: string,
-    foiComprado: boolean,
-    pontos: number
-}
-
 interface User{
   nome: string
 }
 
+const vounchers = [
+  {
+    id: 1,
+    image: PlaceholderXbox,
+    nome: "Cartão Presente XBOX R$ 25,00",
+    price: 25000
+  },
+  {
+    id: 2,
+    image: PlaceholderIfood,
+    nome: "Cupom Desconto iFood R$ 20,00",
+    price: 20000
+  },
+  {
+    id: 3,
+    image: PlaceholderMcDonalds,
+    nome: "Cupom Desconto McDonald's R$ 25,00",
+    price: 25000
+  },
+]
+
 export function ShoppingPage(){
   document.title = "Resgate seus pontos || Impacto"
-  const [vounchers, setVounchers] = useState<Vounchers[] | []>([])
   const [user, setUser] = useState<User | string>('')
-  const [erro, setErro] = useState('')
 
   const { t } = useTranslation()
-
-  async function getVounchers(){
-    vounchersAPI.get('/')
-    .then(({ data: { vounchers } }) => {
-      setVounchers(vounchers)
-    })
-    .catch((err) => {
-      const { code } = err
-      
-      if (code === "ERR_NETWORK") {
-        setErro('Não foi possível carregar os vounchers e cupons de desconto')
-      }
-    })
-  }
-
   const getUserId = localStorage.getItem('userId') ? localStorage.getItem('userId') : ''
 
   async function getUser(){
@@ -55,7 +49,7 @@ export function ShoppingPage(){
   }
 
   useEffect(() => {
-    Promise.all([getVounchers(), getUser()])
+   getUser()
   },[])
 
   return (
@@ -105,17 +99,9 @@ export function ShoppingPage(){
 
           <section className="flex justify-between items-center gap-6 w-full flex-wrap">
             {
-              erro === '' ?
-              (vounchers.length > 0 && (
-                <>
-                  <Recompensa image={PlaceholderXbox} nome={vounchers[7].nome} price={vounchers[7].pontos} />
-                  <Recompensa image={PlaceholderMcDonalds} nome={vounchers[6].nome} price={vounchers[6].pontos} />
-                  <Recompensa image={PlaceholderIfood} nome={vounchers[11].nome} price={vounchers[11].pontos} />
-                </>
-              )) :
-              <span className="text-xl font-bold text-red-600">
-                {erro}
-              </span>
+              vounchers.map(item => (
+                <Recompensa image={item.image} nome={item.nome} price={item.price} />
+              ))
             }
           </section>
         </section>
