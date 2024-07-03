@@ -69,10 +69,6 @@ const impactantes = [
     },
 ]
 
-import PulseMais from './assets/images/parceiros/pulse_mais.jpg'
-import Proa from './assets/images/parceiros/instituto_proa.jpg'
-import { Parceiro } from "./Components/parceiro"
-
 export function Sobre() {
   const { t } = useTranslation()
 
