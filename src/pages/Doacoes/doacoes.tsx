@@ -2,6 +2,7 @@ import DoeParaTodos from '@/assets/imagens-doacoes/doe_para_todos.png'
 
 import PulseMais from '../Sobre/assets/images/parceiros/pulse_mais.jpg'
 import Proa from '../Sobre/assets/images/parceiros/instituto_proa.jpg'
+import MissaoVida from '@/pages/Home/assets/missao-vida.png'
 
 import { Tag } from "./components/tag";
 import { Ong } from "./components/ong";
@@ -9,17 +10,23 @@ import { useTranslation } from "react-i18next";
 
 const ongs = [
   {
-    id: 1,
+    id: 2,
     nome: "Pulse mais",
     sobreOng: "🚀 Incluimos jovens de baixa renda no universo da tecnologia através de educação, mentoria e conexão com mercado",
     image: PulseMais
   },
   {
-    id: 2,
+    id: 1,
     nome: "Instituto PROA",
     sobreOng: "Ajudamos jovens a conquistarem seus sonhos! 💙 oferecemos cursos gratuitos de preparo pro mercado de trabalho!",
     image: Proa
-  }
+  },
+  {
+    id: 3,
+    nome: "Missão Vida",
+    sobreOng: "Nossa objetivo consiste em ajudar e esclarecer aos nossos visitantes das mais variadas matérias sobre a solidariedade, assim como divulgar os valores que contribuem positivamente para o enriquecimento pessoal do solidário. Todas as pessoas necessitam de apoio em um dado momento.",
+    image: MissaoVida
+  },
 ]
 
 export function Doacoes(){
