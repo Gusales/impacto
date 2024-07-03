@@ -180,18 +180,7 @@ export function Sobre() {
                   </div>
                 </section>
 
-                <section className="mt-20 md:mt-0 md:h-[90vh]">
-                  <h2 className="text-center text-2xl font-semibold">
-                    {t('sobreNossosParceiros')}
-                  </h2>
-                  <p className="mt-4 text-center">
-                    {t('sobreNossosParceirosTexto')}
-                  </p>
-                  <div className="flex items-center gap-10 justify-center mt-10">
-                    <Parceiro cover={Proa} coverAlt="Logo do Instituto PROA" nome="Instituto PROA" />
-                    <Parceiro cover={PulseMais} coverAlt="Logo da ONG Pulse Mais" nome="Pulse Mais" />
-                  </div>
-                </section>
+                
             </main>
         </div>
     )
