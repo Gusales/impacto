@@ -20,7 +20,7 @@ export function Router(){
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/shopping" element={<ShoppingPage />} />
-        <Route path="/doar" element={<Doar />} />
+        <Route path="/doar/:id" element={<Doar />} />
         <Route path="/sobrenos" element={<Sobre />} />
         <Route path="/doacoes" element={<Doacoes />} />
         <Route path="/voluntario" element={<Voluntariado />} />
